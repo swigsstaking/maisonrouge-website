@@ -104,7 +104,7 @@ const Layout = ({ children }) => {
                 <Component
                   key={item.nameKey}
                   {...props}
-                  className={`px-4 xl:px-5 py-3 text-xs xl:text-sm tracking-extra-wide uppercase font-semibold transition-colors ${
+                  className={`px-3 xl:px-4 py-3 text-[11px] xl:text-xs tracking-wider uppercase font-semibold transition-colors ${
                     isActive(path)
                       ? 'bg-primary-700 text-white'
                       : 'text-white/90 hover:bg-primary-700 hover:text-white'

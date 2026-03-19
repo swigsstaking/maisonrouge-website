@@ -1,13 +1,13 @@
 {
   "nav": {
     "vignoble": "Vineyard",
-    "vins": "Our wines",
-    "apprentis": "Lo chaï - Cuvee of apprentices",
+    "vins": "Wines",
+    "apprentis": "Apprentice wines",
     "oenotourisme": "Wine tourism",
     "partenaires": "Partners",
     "sponsoring": "Sponsorship",
     "actualite": "News",
-    "contact": "Contact us"
+    "contact": "Contact"
   },
   "header": {
     "monCompte": "MY ACCOUNT",
