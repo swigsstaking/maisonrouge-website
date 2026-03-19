@@ -1,8 +1,10 @@
 import SEOHead from '../components/SEOHead';
 import { useSiteInfo } from '../hooks/useSiteInfo';
+import { useLanguage } from '../context/LanguageContext';
 
 const Partenaires = () => {
   const siteInfo = useSiteInfo();
+  const { t } = useLanguage();
 
   return (
     <>
@@ -12,13 +14,13 @@ const Partenaires = () => {
       <section className="relative h-64 md:h-80">
         <img
           src="/banner-small1.jpg"
-          alt="Partenaires Maison Rouge"
+          alt={t('partenaires.title')}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white tracking-wider uppercase font-['Raleway']">
-            Partenaires
+            {t('partenaires.title')}
           </h1>
         </div>
       </section>
@@ -27,13 +29,13 @@ const Partenaires = () => {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-base font-bold uppercase text-primary-600 tracking-wide mb-10">
-            Partenaires
+            {t('partenaires.heading')}
           </h2>
 
           <div className="space-y-12">
             {/* ISOVIN */}
             <div>
-              <h2 className="text-xl font-bold uppercase text-primary-600 mb-6">ISOVIN</h2>
+              <h2 className="text-xl font-bold uppercase text-primary-600 mb-6">{t('partenaires.isovin.title')}</h2>
               <div className="flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <img
@@ -45,7 +47,7 @@ const Partenaires = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-secondary-700 leading-relaxed mb-4">
-                    Inspirés par le terroir valaisan et ce qu'il a de meilleur à offrir, les pots isothermes Isovin sont créés de façon artisanale, entre tradition et modernité. Ils sont réalisés en bois de hêtre qui, grâce à son pouvoir isolant, garde les bouteilles au frais. Un objet naturel et écologique, à l'esthétique travaillée, qui trouvera sa place sur votre table et participera à vos meilleurs moments de convivialité.
+                    {t('partenaires.isovin.text')}
                   </p>
                   <div className="text-right">
                     <a
@@ -63,7 +65,7 @@ const Partenaires = () => {
 
             {/* OOULIRI */}
             <div>
-              <h2 className="text-xl font-bold uppercase text-primary-600 mb-6">OOULIRI</h2>
+              <h2 className="text-xl font-bold uppercase text-primary-600 mb-6">{t('partenaires.oouliri.title')}</h2>
               <div className="flex flex-col md:flex-row items-start gap-6">
                 <div className="flex-shrink-0">
                   <img
@@ -75,7 +77,7 @@ const Partenaires = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-secondary-700 leading-relaxed mb-4">
-                    Oouliri est une huilerie valaisanne spécialisée dans la production d'huiles de qualité supérieure, fabriquées à partir d'ingrédients régionaux. Les graines formant la matière première de nos huiles sont produites puis pressées dans la région, privilégiant les circuits courts pour minimiser l'impact environnemental et contribuer à l'économie locale.
+                    {t('partenaires.oouliri.text')}
                   </p>
                   <div className="text-right">
                     <a

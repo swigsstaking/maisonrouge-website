@@ -3,10 +3,12 @@ import SEOHead from '../components/SEOHead';
 import { useSiteInfo } from '../hooks/useSiteInfo';
 import { useContact } from '../hooks/useContact';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
   const siteInfo = useSiteInfo();
   const contactMutation = useContact();
+  const { t } = useLanguage();
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -45,13 +47,13 @@ const Contact = () => {
       <section className="relative h-64 md:h-80">
         <img
           src="/banner-small2.jpg"
-          alt="Contact Maison Rouge"
+          alt={t('contact.title')}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white tracking-wider uppercase font-['Raleway']">
-            Contact
+            {t('contact.title')}
           </h1>
         </div>
       </section>
@@ -60,11 +62,10 @@ const Contact = () => {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-base font-bold uppercase text-primary-600 tracking-wide mb-3">
-            Contactez-nous aujourd'hui !
+            {t('contact.subtitle')}
           </h2>
           <p className="text-secondary-700 leading-relaxed mb-12">
-            N'hésitez pas à nous envoyer votre demande et vos questions, nous vous répondrons dans
-            les meilleurs délais.
+            {t('contact.description')}
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -73,7 +74,7 @@ const Contact = () => {
               {/* Localisation */}
               <div>
                 <h2 className="text-base font-bold uppercase text-primary-600 tracking-wide mb-4">
-                  Localisation
+                  {t('contact.localisation')}
                 </h2>
                 <p className="text-secondary-700 leading-relaxed">
                   {siteInfo.contact?.address}
@@ -83,20 +84,20 @@ const Contact = () => {
               {/* Heures d'ouverture */}
               <div>
                 <h2 className="text-base font-bold uppercase text-primary-600 tracking-wide mb-4">
-                  Heures d'ouverture
+                  {t('contact.heures')}
                 </h2>
                 <div className="space-y-2 text-secondary-700">
                   <div className="flex justify-between max-w-xs">
-                    <span>Lundi au jeudi</span>
-                    <span>7h30-12h / 13h30-18h</span>
+                    <span>{t('contact.hours.lundiJeudi')}</span>
+                    <span>{t('contact.hours.lundiJeudiH')}</span>
                   </div>
                   <div className="flex justify-between max-w-xs">
-                    <span>Vendredi</span>
-                    <span>7h30-12h / 13h30-17h</span>
+                    <span>{t('contact.hours.vendredi')}</span>
+                    <span>{t('contact.hours.vendrediH')}</span>
                   </div>
                   <div className="flex justify-between max-w-xs">
-                    <span>Samedi et dimanche</span>
-                    <span className="text-primary-600 font-medium">Fermé</span>
+                    <span>{t('contact.hours.weekend')}</span>
+                    <span className="text-primary-600 font-medium">{t('contact.hours.weekendH')}</span>
                   </div>
                 </div>
               </div>
@@ -105,20 +106,20 @@ const Contact = () => {
             {/* Right Column - Form */}
             <div>
               <h2 className="text-base font-bold uppercase text-primary-600 tracking-wide mb-6">
-                Email
+                {t('contact.email')}
               </h2>
 
               {submitted ? (
                 <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
-                  <h3 className="text-lg font-medium text-green-800 mb-2">Message envoyé !</h3>
+                  <h3 className="text-lg font-medium text-green-800 mb-2">{t('contact.success.title')}</h3>
                   <p className="text-green-700 mb-4">
-                    Nous vous répondrons dans les plus brefs délais.
+                    {t('contact.success.text')}
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
                     className="text-primary-600 hover:text-primary-700 font-semibold underline underline-offset-2"
                   >
-                    Envoyer un autre message
+                    {t('contact.success.another')}
                   </button>
                 </div>
               ) : (
@@ -129,7 +130,7 @@ const Contact = () => {
                         htmlFor="firstName"
                         className="block text-sm font-medium text-secondary-700 mb-1"
                       >
-                        Prénom *
+                        {t('contact.form.prenom')} *
                       </label>
                       <input
                         type="text"
@@ -139,7 +140,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                        placeholder="Votre prénom"
+                        placeholder={t('contact.form.prenomPlaceholder')}
                       />
                     </div>
                     <div>
@@ -147,7 +148,7 @@ const Contact = () => {
                         htmlFor="lastName"
                         className="block text-sm font-medium text-secondary-700 mb-1"
                       >
-                        Nom *
+                        {t('contact.form.nom')} *
                       </label>
                       <input
                         type="text"
@@ -157,7 +158,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                        placeholder="Votre nom"
+                        placeholder={t('contact.form.nomPlaceholder')}
                       />
                     </div>
                   </div>
@@ -167,7 +168,7 @@ const Contact = () => {
                       htmlFor="email"
                       className="block text-sm font-medium text-secondary-700 mb-1"
                     >
-                      E-mail *
+                      {t('contact.form.email')} *
                     </label>
                     <input
                       type="email"
@@ -177,7 +178,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                      placeholder="votre@email.ch"
+                      placeholder={t('contact.form.emailPlaceholder')}
                     />
                   </div>
 
@@ -186,7 +187,7 @@ const Contact = () => {
                       htmlFor="message"
                       className="block text-sm font-medium text-secondary-700 mb-1"
                     >
-                      Message *
+                      {t('contact.form.message')} *
                     </label>
                     <textarea
                       id="message"
@@ -196,13 +197,13 @@ const Contact = () => {
                       required
                       rows={5}
                       className="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"
-                      placeholder="Votre message..."
+                      placeholder={t('contact.form.messagePlaceholder')}
                     />
                   </div>
 
                   {contactMutation.isError && (
                     <div className="text-red-600 bg-red-50 p-4 rounded-lg text-sm">
-                      Une erreur est survenue. Veuillez réessayer.
+                      {t('contact.error')}
                     </div>
                   )}
 
@@ -211,7 +212,7 @@ const Contact = () => {
                     disabled={contactMutation.isPending}
                     className="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold uppercase tracking-wide hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {contactMutation.isPending ? 'Envoi en cours...' : 'Envoyer'}
+                    {contactMutation.isPending ? t('contact.form.sending') : t('contact.form.envoyer')}
                   </button>
                 </form>
               )}

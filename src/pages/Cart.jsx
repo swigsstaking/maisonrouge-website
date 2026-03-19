@@ -15,7 +15,7 @@ function getId(product) {
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice } = useCart();
-  const { localePath } = useLanguage();
+  const { t, localePath } = useLanguage();
 
   return (
     <>
@@ -25,13 +25,13 @@ const Cart = () => {
       <section className="relative h-32 md:h-48 w-full overflow-hidden">
         <img
           src="/banner-small1.jpg"
-          alt="Panier - Maison Rouge"
+          alt={t('cart.title')}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-wider font-['Raleway']">
-            Panier
+            {t('cart.title')}
           </h1>
         </div>
       </section>
@@ -41,13 +41,13 @@ const Cart = () => {
           {items.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-lg text-secondary-600 font-['Raleway'] mb-6">
-                Votre panier est vide.
+                {t('cart.empty')}
               </p>
               <Link
                 to={localePath('vins')}
                 className="inline-block bg-primary-600 text-white uppercase text-sm font-bold tracking-wider py-3 px-8 hover:bg-primary-700 transition-colors duration-200 font-['Raleway']"
               >
-                Voir nos vins
+                {t('cart.seeWines')}
               </Link>
             </div>
           ) : (
@@ -57,10 +57,10 @@ const Cart = () => {
                 <table className="w-full">
                   <thead>
                     <tr className="border-b border-gray-200 text-xs uppercase tracking-wider text-secondary-500 font-['Raleway']">
-                      <th className="text-left py-3 px-4">Produit</th>
-                      <th className="text-center py-3 px-4">Prix unitaire</th>
-                      <th className="text-center py-3 px-4">Quantité</th>
-                      <th className="text-right py-3 px-4">Total</th>
+                      <th className="text-left py-3 px-4">{t('cart.product')}</th>
+                      <th className="text-center py-3 px-4">{t('cart.unitPrice')}</th>
+                      <th className="text-center py-3 px-4">{t('cart.quantity')}</th>
+                      <th className="text-right py-3 px-4">{t('cart.total')}</th>
                       <th className="py-3 px-2"></th>
                     </tr>
                   </thead>
@@ -215,7 +215,7 @@ const Cart = () => {
               <div className="mt-8 bg-white p-6">
                 <div className="flex justify-between items-center mb-3">
                   <span className="text-sm text-secondary-600 font-['Raleway']">
-                    Sous-total
+                    {t('cart.subtotal')}
                   </span>
                   <span className="text-sm text-secondary-800 font-['Raleway']">
                     CHF {totalPrice.toFixed(2)}
@@ -223,16 +223,16 @@ const Cart = () => {
                 </div>
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-sm text-secondary-600 font-['Raleway']">
-                    Livraison
+                    {t('cart.shipping')}
                   </span>
                   <span className="text-sm font-semibold text-green-700 font-['Raleway']">
-                    LIVRAISON GRATUITE
+                    {t('cart.freeShipping')}
                   </span>
                 </div>
                 <hr className="border-gray-200 mb-4" />
                 <div className="flex justify-between items-center mb-8">
                   <span className="text-lg font-bold text-secondary-900 font-['Raleway']">
-                    Total
+                    {t('cart.totalLabel')}
                   </span>
                   <span className="text-xl font-bold text-secondary-900 font-['Raleway']">
                     CHF {totalPrice.toFixed(2)}
@@ -240,7 +240,7 @@ const Cart = () => {
                 </div>
 
                 <button className="w-full bg-primary-600 text-white uppercase text-sm font-bold tracking-wider py-4 hover:bg-primary-700 transition-colors duration-200 font-['Raleway']">
-                  Commander
+                  {t('cart.order')}
                 </button>
 
                 <div className="text-center mt-4">
@@ -248,7 +248,7 @@ const Cart = () => {
                     to={localePath('vins')}
                     className="text-sm text-secondary-600 hover:text-primary-600 transition-colors font-['Raleway'] underline"
                   >
-                    Continuer vos achats
+                    {t('cart.continueShopping')}
                   </Link>
                 </div>
               </div>

@@ -62,7 +62,7 @@ const ProductDetail = () => {
   const siteInfo = useSiteInfo();
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
-  const { localePath } = useLanguage();
+  const { t, localePath } = useLanguage();
   const [added, setAdded] = useState(false);
 
   const { data: product, isLoading } = useQuery({
@@ -103,23 +103,23 @@ const ProductDetail = () => {
         <section className="relative h-32 md:h-48 w-full overflow-hidden">
           <img
             src="/banner-small1.jpg"
-            alt="Produit introuvable"
+            alt={t('product.notFound')}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50" />
         </section>
         <div className="flex flex-col items-center justify-center py-24 px-4 text-center">
           <h2 className="text-2xl font-bold text-secondary-800 font-['Raleway'] mb-4">
-            Produit introuvable
+            {t('product.notFound')}
           </h2>
           <p className="text-secondary-600 font-['Raleway'] mb-6">
-            Le produit que vous recherchez n'existe pas ou a été retiré.
+            {t('product.notFoundText')}
           </p>
           <Link
             to={localePath('vins')}
             className="bg-primary-600 text-white uppercase text-sm font-bold tracking-wider py-2 px-6 hover:bg-primary-700 transition-colors duration-200 font-['Raleway']"
           >
-            Retour aux vins
+            {t('product.backLink')}
           </Link>
         </div>
       </>
@@ -147,7 +147,7 @@ const ProductDetail = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <nav className="flex items-center gap-2 text-sm text-secondary-500 font-['Raleway']">
           <Link to={localePath('vins')} className="hover:text-primary-600 transition-colors">
-            Nos Vins
+            {t('product.backToWines')}
           </Link>
           <span>/</span>
           <span className="text-secondary-800">{product.name}</span>
@@ -168,7 +168,7 @@ const ProductDetail = () => {
                 />
               ) : (
                 <div className="w-full h-80 bg-stone-100 flex items-center justify-center text-secondary-400 font-['Raleway']">
-                  Pas d'image
+                  {t('product.noImage')}
                 </div>
               )}
             </div>
@@ -210,13 +210,13 @@ const ProductDetail = () => {
               </p>
               {product.price?.unit && (
                 <p className="text-xs text-secondary-500 font-['Raleway'] mb-6">
-                  Contenance : {product.price.unit}
+                  {t('product.content')} : {product.price.unit}
                 </p>
               )}
 
               {/* Quantity Selector */}
               <div className="flex items-center gap-4 mb-6">
-                <span className="text-sm text-secondary-700 font-['Raleway']">Quantité</span>
+                <span className="text-sm text-secondary-700 font-['Raleway']">{t('product.quantity')}</span>
                 <div className="flex items-center border border-gray-300">
                   <button
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -258,7 +258,7 @@ const ProductDetail = () => {
                     : 'bg-primary-600 text-white hover:bg-primary-700'
                 }`}
               >
-                {added ? 'Ajouté !' : 'Ajouter au panier'}
+                {added ? t('product.added') : t('product.addToCart')}
               </button>
             </div>
           </div>

@@ -61,6 +61,38 @@
       "title": "MAISON ROUGE SPONSOR OF YOUR EVENTS",
       "subtitle": "WE ARE PROUD TO SUPPORT CULTURE, SPORT AND LEISURE"
     },
+    "sponsor": {
+      "jumpingSion": {
+        "name": "Jumping Sion",
+        "text": "Until 2018, we supported Jumping Sion and its equestrian competitions that require elegance and precision from both horses and riders. Two strong values for our company."
+      },
+      "lucieMoreillon": {
+        "name": "Lucie Moreillon",
+        "text": "Maison Rouge encourages young people in their passions and helps them achieve their goals, such as Lucie Moreillon, national A-level pony dressage rider in 2018."
+      },
+      "fcConthey": {
+        "name": "FC Conthey",
+        "text": "Since 2018, we have contributed to the integration and development of Valais youth through sport by supporting FC Conthey. Football values such as solidarity, team spirit and openness to the world are also those of our company."
+      },
+      "rallyeValais": {
+        "name": "Jonathan Hirschi - Rallye International Valais",
+        "text": "In 2015, we embarked on the roads alongside Swiss driver Jonathan Hirschi for the Rallye International du Valais. A human adventure that will remain etched in memories."
+      },
+      "spas": {
+        "name": "SPAS - Seaplane Pilots Association Switzerland",
+        "text": ""
+      }
+    },
+    "partenaires": {
+      "isovin": {
+        "title": "ISOVIN",
+        "text": "Inspired by the Valais terroir and the best it has to offer, Isovin insulated pots are crafted in an artisanal way, between tradition and modernity. They are made from beech wood which, thanks to its insulating properties, keeps bottles cool. A natural and ecological object with refined aesthetics that will find its place on your table and accompany your best convivial moments."
+      },
+      "oouliri": {
+        "title": "OOULIRI",
+        "text": "Oouliri is a Valais oil mill specialising in the production of premium quality oils made from regional ingredients. The seeds forming the raw material for our oils are produced and pressed in the region, favouring short supply chains to minimise environmental impact and contribute to the local economy."
+      }
+    },
     "visitSite": "Visit website"
   },
   "vignoble": {
@@ -185,6 +217,88 @@
     "password": "Password",
     "login": "Log in",
     "forgotPassword": "Forgot your password?",
-    "createBtn": "Create my account"
+    "createBtn": "Create my account",
+    "bannerTitle": "My account",
+    "createTitle": "Create your account",
+    "createSubtitle": "Enter your e-mail address to create your account.",
+    "emailLabel": "E-mail address",
+    "passwordLabel": "Password",
+    "firstNameLabel": "First name",
+    "lastNameLabel": "Last name",
+    "creating": "Creating...",
+    "createSubmit": "Create your account",
+    "loggingIn": "Logging in...",
+    "loginSubmit": "Log in"
+  },
+  "sponsoring": {
+    "title": "Sponsorship",
+    "heading": "Maison Rouge sponsor of your events",
+    "subtitle": "We are proud to support culture, sport and leisure",
+    "jumpingSion": {
+      "name": "Jumping Sion",
+      "description": "Until 2018, we supported Jumping Sion and its equestrian competitions that require elegance and precision from horses and their riders. Two strong values for our company."
+    },
+    "lucieMoreillon": {
+      "name": "Lucie Moreillon",
+      "description": "Maison Rouge encourages young people in their passions and helps them achieve their goals, such as Lucie Moreillon, national A-level pony dressage rider in 2018."
+    },
+    "fcConthey": {
+      "name": "FC Conthey",
+      "description": "Since 2018, we have contributed to the integration and development of Valais youth through sport by supporting FC Conthey. The values of football such as solidarity, team spirit and openness to the world are also those of our company."
+    },
+    "rallyeValais": {
+      "name": "Jonathan Hirschi - Rallye International Valais",
+      "description": "In 2015, we embarked and travelled the roads alongside Swiss driver Jonathan Hirschi for the Rallye International du Valais. A human adventure that will remain etched in our memories."
+    },
+    "spas": {
+      "name": "SPAS - Seaplane Pilots Association Switzerland",
+      "description": ""
+    }
+  },
+  "partenaires": {
+    "title": "Partners",
+    "heading": "Partners",
+    "isovin": {
+      "title": "ISOVIN",
+      "text": "Inspired by the Valais terroir and the best it has to offer, Isovin insulated pots are handcrafted, blending tradition and modernity. They are made from beechwood which, thanks to its insulating properties, keeps bottles cool. A natural and ecological object with refined aesthetics that will find its place on your table and enhance your best convivial moments."
+    },
+    "oouliri": {
+      "title": "OOULIRI",
+      "text": "Oouliri is a Valais oil mill specialising in the production of superior quality oils made from regional ingredients. The seeds forming the raw material of our oils are produced and pressed in the region, favouring short supply chains to minimise the environmental impact and contribute to the local economy."
+    }
+  },
+  "account": {
+    "bannerTitle": "My account",
+    "welcome": "Welcome,",
+    "myInfo": "My information",
+    "emailLabel": "E-mail:",
+    "firstNameLabel": "First name:",
+    "lastNameLabel": "Last name:",
+    "edit": "Edit",
+    "saving": "Saving...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "myOrders": "My orders",
+    "loadingOrders": "Loading orders...",
+    "noOrders": "You have no orders yet.",
+    "orderNumber": "Order no.",
+    "date": "Date",
+    "total": "Total",
+    "status": "Status",
+    "statusPending": "Pending",
+    "statusProcessing": "Processing",
+    "statusShipped": "Shipped",
+    "statusDelivered": "Delivered",
+    "statusCancelled": "Cancelled",
+    "logout": "Log out",
+    "loading": "Loading..."
+  },
+  "vinsFilter": {
+    "vinsBlanc": "White wines",
+    "vinRose": "Rosé wine",
+    "vinsRouge": "Red wines",
+    "creations": "Creations",
+    "vinsApprentis": "Apprentice wines",
+    "produitsDerives": "Accessories"
   }
 }

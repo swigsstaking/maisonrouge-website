@@ -48,8 +48,16 @@ const products = [
   { name: 'é boé Brut et bouchon à bulle', price: '44.00', image: '/wines/e-boe-noel.jpg', slug: 'e-boe-noel', category: 'Produits Dérivés' },
 ];
 
-const categories = [
-  "Tout l'assortiment",
+const categoryKeys = {
+  'Vins Blanc': 'vinsFilter.vinsBlanc',
+  'Vin Rosé': 'vinsFilter.vinRose',
+  'Vins Rouge': 'vinsFilter.vinsRouge',
+  'Créations': 'vinsFilter.creations',
+  'Vins des Apprentis': 'vinsFilter.vinsApprentis',
+  'Produits Dérivés': 'vinsFilter.produitsDerives',
+};
+
+const categoryValues = [
   'Vins Blanc',
   'Vin Rosé',
   'Vins Rouge',
@@ -61,12 +69,12 @@ const categories = [
 const Vins = () => {
   const siteInfo = useSiteInfo();
   const { addToCart } = useCart();
-  const { localePath } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState("Tout l'assortiment");
+  const { t, localePath } = useLanguage();
+  const [activeCategory, setActiveCategory] = useState('all');
   const [addedSlug, setAddedSlug] = useState(null);
 
   const filteredProducts =
-    activeCategory === "Tout l'assortiment"
+    activeCategory === 'all'
       ? products
       : products.filter((p) => p.category === activeCategory);
 
@@ -78,13 +86,13 @@ const Vins = () => {
       <section className="relative h-48 md:h-64 w-full overflow-hidden">
         <img
           src="/banner-small1.jpg"
-          alt="Nos Vins - Maison Rouge"
+          alt={t('vins.title')}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white uppercase tracking-wider font-['Raleway']">
-            Nos Vins
+            {t('vins.title')}
           </h1>
         </div>
       </section>
@@ -97,9 +105,10 @@ const Vins = () => {
             onChange={(e) => setActiveCategory(e.target.value)}
             className="w-full md:w-auto border border-gray-300 rounded px-4 py-2 text-sm font-['Raleway'] text-secondary-800 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600"
           >
-            {categories.map((cat) => (
+            <option value="all">{t('vins.filter.all')}</option>
+            {categoryValues.map((cat) => (
               <option key={cat} value={cat}>
-                {cat}
+                {t(categoryKeys[cat])}
               </option>
             ))}
           </select>
@@ -147,7 +156,7 @@ const Vins = () => {
                         : 'bg-primary-600 text-white hover:bg-primary-700'
                     }`}
                   >
-                    {addedSlug === product.slug ? 'Ajouté !' : 'Ajouter au panier'}
+                    {addedSlug === product.slug ? t('vins.added') : t('vins.addToCart')}
                   </button>
                 </div>
               </Link>

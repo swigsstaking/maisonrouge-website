@@ -1,5 +1,6 @@
 import SEOHead from '../components/SEOHead';
 import { useSiteInfo } from '../hooks/useSiteInfo';
+import { useLanguage } from '../context/LanguageContext';
 
 const apprentices = [
   {
@@ -48,6 +49,7 @@ const apprentices = [
 
 const Apprentis = () => {
   const siteInfo = useSiteInfo();
+  const { t } = useLanguage();
 
   return (
     <>
@@ -57,13 +59,13 @@ const Apprentis = () => {
       <section className="relative h-48 md:h-64">
         <img
           src="/banner-small1.jpg"
-          alt="Cuvée des Apprentis"
+          alt={t('apprentis.title')}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-3xl md:text-5xl font-bold text-white tracking-wider uppercase font-['Raleway']">
-            CUVÉE DES APPRENTIS
+            {t('apprentis.title')}
           </h1>
         </div>
       </section>
@@ -72,21 +74,17 @@ const Apprentis = () => {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-base font-bold uppercase text-primary-600 tracking-wider mb-3">
-            CUVÉE DES APPRENTIS
+            {t('apprentis.title')}
           </h2>
           <h2 className="text-lg font-medium text-secondary-800 mb-8">
-            Un savoir et une passion du vin transmis aux générations futures
+            {t('apprentis.subtitle')}
           </h2>
           <p className="text-secondary-700 leading-relaxed mb-12">
-            Depuis plusieurs années, Maison Rouge, autrefois Flaction vins, partage son savoir et sa
-            passion du vin avec les apprentis placés sous sa responsabilité. Ces jeunes ont la chance
-            de réaliser une cuvée de leur choix. Ces « vins des apprentis » visent à leur
-            apprendre l'ampleur de la tâche, de la vigne à la vente. De quoi assurer une relève
-            compétente pour la viticulture valaisanne.
+            {t('apprentis.text')}
           </p>
 
           <h2 className="text-lg font-medium text-secondary-800 mb-10">
-            Découvrez les vins des apprentis Maison Rouge !
+            {t('apprentis.discover')}
           </h2>
 
           {/* Apprentice Blocks */}

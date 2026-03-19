@@ -61,6 +61,38 @@
       "title": "MAISON ROUGE SPONSOR IHRER VERANSTALTUNGEN",
       "subtitle": "WIR SIND STOLZ, KULTUR, SPORT UND FREIZEIT ZU UNTERSTÜTZEN"
     },
+    "sponsor": {
+      "jumpingSion": {
+        "name": "Jumping Sion",
+        "text": "Bis 2018 haben wir das Jumping Sion und seine Reitsportwettbewerbe unterstützt, die Eleganz und Präzision von Pferden und Reitern erfordern. Zwei starke Werte für unser Unternehmen."
+      },
+      "lucieMoreillon": {
+        "name": "Lucie Moreillon",
+        "text": "Maison Rouge ermutigt junge Menschen in ihren Leidenschaften und hilft ihnen, ihre Ziele zu erreichen, wie Lucie Moreillon, nationale A-Kader-Ponydressurreiterin 2018."
+      },
+      "fcConthey": {
+        "name": "FC Conthey",
+        "text": "Seit 2018 tragen wir durch die Unterstützung des FC Conthey zur Integration und Entwicklung der Walliser Jugend durch Sport bei. Die Werte des Fussballs wie Solidarität, Teamgeist und Weltoffenheit sind auch die unseres Unternehmens."
+      },
+      "rallyeValais": {
+        "name": "Jonathan Hirschi - Rallye International Valais",
+        "text": "2015 begaben wir uns an der Seite des Schweizer Fahrers Jonathan Hirschi auf die Strassen der Rallye International du Valais. Ein menschliches Abenteuer, das in Erinnerung bleiben wird."
+      },
+      "spas": {
+        "name": "SPAS - Seaplane Pilots Association Switzerland",
+        "text": ""
+      }
+    },
+    "partenaires": {
+      "isovin": {
+        "title": "ISOVIN",
+        "text": "Inspiriert vom Walliser Terroir und dem Besten, was es zu bieten hat, werden die Isovin-Isoliergefässe handwerklich zwischen Tradition und Moderne gefertigt. Sie bestehen aus Buchenholz, das dank seiner isolierenden Eigenschaften Flaschen kühl hält. Ein natürliches und ökologisches Objekt mit raffinierter Ästhetik, das seinen Platz auf Ihrem Tisch finden und Ihre schönsten geselligen Momente begleiten wird."
+      },
+      "oouliri": {
+        "title": "OOULIRI",
+        "text": "Oouliri ist eine Walliser Ölmühle, die sich auf die Herstellung hochwertiger Öle aus regionalen Zutaten spezialisiert hat. Die Samen, die den Rohstoff unserer Öle bilden, werden in der Region produziert und gepresst, wobei kurze Lieferketten bevorzugt werden, um die Umweltbelastung zu minimieren und zur lokalen Wirtschaft beizutragen."
+      }
+    },
     "visitSite": "Website besuchen"
   },
   "vignoble": {
@@ -185,6 +217,88 @@
     "password": "Passwort",
     "login": "Anmelden",
     "forgotPassword": "Passwort vergessen?",
-    "createBtn": "Mein Konto erstellen"
+    "createBtn": "Mein Konto erstellen",
+    "bannerTitle": "Mein Konto",
+    "createTitle": "Erstellen Sie Ihr Konto",
+    "createSubtitle": "Geben Sie Ihre E-Mail-Adresse ein, um Ihr Konto zu erstellen.",
+    "emailLabel": "E-Mail-Adresse",
+    "passwordLabel": "Passwort",
+    "firstNameLabel": "Vorname",
+    "lastNameLabel": "Nachname",
+    "creating": "Wird erstellt...",
+    "createSubmit": "Konto erstellen",
+    "loggingIn": "Anmeldung läuft...",
+    "loginSubmit": "Anmelden"
+  },
+  "sponsoring": {
+    "title": "Sponsoring",
+    "heading": "Maison Rouge Sponsor Ihrer Veranstaltungen",
+    "subtitle": "Wir sind stolz, Kultur, Sport und Freizeit zu unterstützen",
+    "jumpingSion": {
+      "name": "Jumping Sion",
+      "description": "Bis 2018 haben wir das Jumping Sion und seine Reitwettbewerbe unterstützt, die Eleganz und Präzision von Pferden und ihren Reitern erfordern. Zwei starke Werte für unser Unternehmen."
+    },
+    "lucieMoreillon": {
+      "name": "Lucie Moreillon",
+      "description": "Maison Rouge ermutigt junge Menschen in ihren Leidenschaften und hilft ihnen, ihre Ziele zu erreichen, wie Lucie Moreillon, nationale A-Kader Ponydressurreiterin 2018."
+    },
+    "fcConthey": {
+      "name": "FC Conthey",
+      "description": "Seit 2018 tragen wir durch die Unterstützung des FC Conthey zur Integration und Entwicklung der Walliser Jugend durch Sport bei. Die Werte des Fussballs wie Solidarität, Teamgeist und Offenheit gegenüber der Welt sind auch die unseres Unternehmens."
+    },
+    "rallyeValais": {
+      "name": "Jonathan Hirschi - Rallye International Valais",
+      "description": "2015 sind wir an der Seite des Schweizer Piloten Jonathan Hirschi für die Rallye International du Valais über die Strassen gefahren. Ein menschliches Abenteuer, das in Erinnerung bleiben wird."
+    },
+    "spas": {
+      "name": "SPAS - Seaplane Pilots Association Switzerland",
+      "description": ""
+    }
+  },
+  "partenaires": {
+    "title": "Partner",
+    "heading": "Partner",
+    "isovin": {
+      "title": "ISOVIN",
+      "text": "Inspiriert vom Walliser Terroir und dem Besten, was es zu bieten hat, werden die Isoliertöpfe von Isovin handwerklich hergestellt, zwischen Tradition und Moderne. Sie sind aus Buchenholz gefertigt, das dank seiner isolierenden Eigenschaften die Flaschen kühl hält. Ein natürliches und ökologisches Objekt mit gepflegter Ästhetik, das auf Ihrem Tisch seinen Platz findet und zu Ihren besten geselligen Momenten beiträgt."
+    },
+    "oouliri": {
+      "title": "OOULIRI",
+      "text": "Oouliri ist eine Walliser Ölmühle, die auf die Herstellung hochwertiger Öle aus regionalen Zutaten spezialisiert ist. Die Samen, die den Rohstoff unserer Öle bilden, werden in der Region produziert und gepresst, wobei kurze Wege bevorzugt werden, um die Umweltbelastung zu minimieren und zur lokalen Wirtschaft beizutragen."
+    }
+  },
+  "account": {
+    "bannerTitle": "Mein Konto",
+    "welcome": "Willkommen,",
+    "myInfo": "Meine Informationen",
+    "emailLabel": "E-Mail:",
+    "firstNameLabel": "Vorname:",
+    "lastNameLabel": "Nachname:",
+    "edit": "Bearbeiten",
+    "saving": "Wird gespeichert...",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "myOrders": "Meine Bestellungen",
+    "loadingOrders": "Bestellungen werden geladen...",
+    "noOrders": "Sie haben noch keine Bestellungen.",
+    "orderNumber": "Bestellnr.",
+    "date": "Datum",
+    "total": "Gesamt",
+    "status": "Status",
+    "statusPending": "Ausstehend",
+    "statusProcessing": "In Bearbeitung",
+    "statusShipped": "Versendet",
+    "statusDelivered": "Geliefert",
+    "statusCancelled": "Storniert",
+    "logout": "Abmelden",
+    "loading": "Wird geladen..."
+  },
+  "vinsFilter": {
+    "vinsBlanc": "Weissweine",
+    "vinRose": "Roséwein",
+    "vinsRouge": "Rotweine",
+    "creations": "Kreationen",
+    "vinsApprentis": "Lehrlingsweine",
+    "produitsDerives": "Zubehör"
   }
 }

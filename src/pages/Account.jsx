@@ -8,7 +8,7 @@ const API_URL = 'https://swigs.online/api';
 const Account = () => {
   const navigate = useNavigate();
   const { customer, token, logout, updateProfile, isAuthenticated, isLoading } = useAuth();
-  const { localePath } = useLanguage();
+  const { t, localePath } = useLanguage();
 
   const [orders, setOrders] = useState([]);
   const [ordersLoading, setOrdersLoading] = useState(true);
@@ -85,11 +85,11 @@ const Account = () => {
 
   const formatStatus = (status) => {
     const map = {
-      pending: 'En attente',
-      processing: 'En traitement',
-      shipped: 'Expédiée',
-      delivered: 'Livrée',
-      cancelled: 'Annulée',
+      pending: t('account.statusPending'),
+      processing: t('account.statusProcessing'),
+      shipped: t('account.statusShipped'),
+      delivered: t('account.statusDelivered'),
+      cancelled: t('account.statusCancelled'),
     };
     return map[status] || status || '-';
   };
@@ -97,7 +97,7 @@ const Account = () => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center py-32">
-        <div className="text-secondary-500 text-sm">Chargement...</div>
+        <div className="text-secondary-500 text-sm">{t('account.loading')}</div>
       </div>
     );
   }
@@ -115,7 +115,7 @@ const Account = () => {
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h1 className="text-white text-3xl md:text-4xl font-bold tracking-extra-wide uppercase">
-            Mon compte
+            {t('account.bannerTitle')}
           </h1>
         </div>
       </div>
@@ -123,28 +123,28 @@ const Account = () => {
       <div className="container-site py-12 md:py-16">
         {/* Welcome */}
         <p className="text-lg text-secondary-700 mb-10">
-          Bienvenue, <span className="font-semibold">{customer?.firstName}</span> !
+          {t('account.welcome')} <span className="font-semibold">{customer?.firstName}</span> !
         </p>
 
         {/* Mes informations */}
         <section className="mb-12">
           <h2 className="text-xl font-bold tracking-extra-wide uppercase text-secondary-800 mb-6">
-            Mes informations
+            {t('account.myInfo')}
           </h2>
 
           {!editing ? (
             <div className="bg-white rounded-lg border border-secondary-200 p-6">
               <div className="space-y-3 text-sm">
                 <div className="flex">
-                  <span className="text-secondary-500 w-28 font-semibold">E-mail :</span>
+                  <span className="text-secondary-500 w-28 font-semibold">{t('account.emailLabel')}</span>
                   <span className="text-secondary-800">{customer?.email}</span>
                 </div>
                 <div className="flex">
-                  <span className="text-secondary-500 w-28 font-semibold">Prénom :</span>
+                  <span className="text-secondary-500 w-28 font-semibold">{t('account.firstNameLabel')}</span>
                   <span className="text-secondary-800">{customer?.firstName}</span>
                 </div>
                 <div className="flex">
-                  <span className="text-secondary-500 w-28 font-semibold">Nom :</span>
+                  <span className="text-secondary-500 w-28 font-semibold">{t('account.lastNameLabel')}</span>
                   <span className="text-secondary-800">{customer?.lastName}</span>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Account = () => {
                 onClick={() => setEditing(true)}
                 className="mt-5 bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase px-6 py-2.5 rounded transition-colors"
               >
-                Modifier
+                {t('account.edit')}
               </button>
             </div>
           ) : (
@@ -165,7 +165,7 @@ const Account = () => {
               <div className="space-y-4 max-w-md">
                 <div>
                   <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                    E-mail
+                    {t('auth.email')}
                   </label>
                   <input
                     type="email"
@@ -176,7 +176,7 @@ const Account = () => {
                 </div>
                 <div>
                   <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                    Prénom
+                    {t('auth.firstNameLabel')}
                   </label>
                   <input
                     type="text"
@@ -188,7 +188,7 @@ const Account = () => {
                 </div>
                 <div>
                   <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                    Nom
+                    {t('auth.lastNameLabel')}
                   </label>
                   <input
                     type="text"
@@ -205,7 +205,7 @@ const Account = () => {
                   disabled={editLoading}
                   className="bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase px-6 py-2.5 rounded transition-colors disabled:opacity-50"
                 >
-                  {editLoading ? 'Enregistrement...' : 'Enregistrer'}
+                  {editLoading ? t('account.saving') : t('account.save')}
                 </button>
                 <button
                   type="button"
@@ -217,7 +217,7 @@ const Account = () => {
                   }}
                   className="border border-secondary-300 text-secondary-600 text-xs font-bold tracking-extra-wide uppercase px-6 py-2.5 rounded hover:bg-secondary-50 transition-colors"
                 >
-                  Annuler
+                  {t('account.cancel')}
                 </button>
               </div>
             </form>
@@ -227,15 +227,15 @@ const Account = () => {
         {/* Mes commandes */}
         <section className="mb-12">
           <h2 className="text-xl font-bold tracking-extra-wide uppercase text-secondary-800 mb-6">
-            Mes commandes
+            {t('account.myOrders')}
           </h2>
 
           {ordersLoading ? (
-            <p className="text-secondary-500 text-sm">Chargement des commandes...</p>
+            <p className="text-secondary-500 text-sm">{t('account.loadingOrders')}</p>
           ) : orders.length === 0 ? (
             <div className="bg-white rounded-lg border border-secondary-200 p-6">
               <p className="text-secondary-500 text-sm">
-                Vous n'avez pas encore de commandes.
+                {t('account.noOrders')}
               </p>
             </div>
           ) : (
@@ -244,16 +244,16 @@ const Account = () => {
                 <thead>
                   <tr className="border-b border-secondary-200 bg-secondary-50">
                     <th className="text-left px-4 py-3 text-xs font-semibold tracking-wide uppercase text-secondary-600">
-                      N° commande
+                      {t('account.orderNumber')}
                     </th>
                     <th className="text-left px-4 py-3 text-xs font-semibold tracking-wide uppercase text-secondary-600">
-                      Date
+                      {t('account.date')}
                     </th>
                     <th className="text-left px-4 py-3 text-xs font-semibold tracking-wide uppercase text-secondary-600">
-                      Total
+                      {t('account.total')}
                     </th>
                     <th className="text-left px-4 py-3 text-xs font-semibold tracking-wide uppercase text-secondary-600">
-                      Statut
+                      {t('account.status')}
                     </th>
                   </tr>
                 </thead>
@@ -287,7 +287,7 @@ const Account = () => {
           onClick={handleLogout}
           className="border border-secondary-300 text-secondary-600 text-xs font-bold tracking-extra-wide uppercase px-8 py-2.5 rounded hover:bg-secondary-50 transition-colors"
         >
-          Déconnexion
+          {t('account.logout')}
         </button>
       </div>
     </div>

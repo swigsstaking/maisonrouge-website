@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 const Auth = () => {
   const navigate = useNavigate();
   const { login, register, isAuthenticated } = useAuth();
-  const { localePath } = useLanguage();
+  const { t, localePath } = useLanguage();
 
   // Redirect if already logged in
   if (isAuthenticated) {
@@ -66,7 +66,7 @@ const Auth = () => {
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h1 className="text-white text-3xl md:text-4xl font-bold tracking-extra-wide uppercase">
-            Mon compte
+            {t('auth.bannerTitle')}
           </h1>
         </div>
       </div>
@@ -77,10 +77,10 @@ const Auth = () => {
           {/* Left: Register */}
           <div>
             <h2 className="text-xl font-bold tracking-extra-wide uppercase text-secondary-800 mb-4">
-              Créez votre compte
+              {t('auth.createTitle')}
             </h2>
             <p className="text-secondary-600 text-sm mb-6">
-              Saisissez votre adresse e-mail pour créer votre compte.
+              {t('auth.createSubtitle')}
             </p>
 
             {regError && (
@@ -92,7 +92,7 @@ const Auth = () => {
             <form onSubmit={handleRegister} className="space-y-4">
               <div>
                 <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                  Adresse e-mail
+                  {t('auth.emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -104,7 +104,7 @@ const Auth = () => {
               </div>
               <div>
                 <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                  Mot de passe
+                  {t('auth.passwordLabel')}
                 </label>
                 <input
                   type="password"
@@ -116,7 +116,7 @@ const Auth = () => {
               </div>
               <div>
                 <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                  Prénom
+                  {t('auth.firstNameLabel')}
                 </label>
                 <input
                   type="text"
@@ -128,7 +128,7 @@ const Auth = () => {
               </div>
               <div>
                 <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                  Nom
+                  {t('auth.lastNameLabel')}
                 </label>
                 <input
                   type="text"
@@ -143,7 +143,7 @@ const Auth = () => {
                 disabled={regLoading}
                 className="w-full bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase py-3 rounded transition-colors disabled:opacity-50"
               >
-                {regLoading ? 'Création en cours...' : 'Créez votre compte'}
+                {regLoading ? t('auth.creating') : t('auth.createSubmit')}
               </button>
             </form>
           </div>
@@ -151,7 +151,7 @@ const Auth = () => {
           {/* Right: Login */}
           <div>
             <h2 className="text-xl font-bold tracking-extra-wide uppercase text-secondary-800 mb-4">
-              Déjà inscrit ?
+              {t('auth.alreadyRegistered')}
             </h2>
 
             {loginError && (
@@ -163,7 +163,7 @@ const Auth = () => {
             <form onSubmit={handleLogin} className="space-y-4 mt-6">
               <div>
                 <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                  Adresse e-mail
+                  {t('auth.emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -175,7 +175,7 @@ const Auth = () => {
               </div>
               <div>
                 <label className="block text-xs font-semibold tracking-wide uppercase text-secondary-700 mb-1">
-                  Mot de passe
+                  {t('auth.passwordLabel')}
                 </label>
                 <input
                   type="password"
@@ -187,7 +187,7 @@ const Auth = () => {
               </div>
               <div className="text-right">
                 <a href="#" className="text-sm text-primary-600 hover:text-primary-700 underline">
-                  Mot de passe oublié ?
+                  {t('auth.forgotPassword')}
                 </a>
               </div>
               <button
@@ -195,7 +195,7 @@ const Auth = () => {
                 disabled={loginLoading}
                 className="w-full bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase py-3 rounded transition-colors disabled:opacity-50"
               >
-                {loginLoading ? 'Connexion en cours...' : 'Connexion'}
+                {loginLoading ? t('auth.loggingIn') : t('auth.loginSubmit')}
               </button>
             </form>
           </div>

@@ -61,6 +61,38 @@
       "title": "MAISON ROUGE SPONSOR DE VOS ÉVÉNEMENTS",
       "subtitle": "NOUS SOMMES FIERS DE SOUTENIR LA CULTURE, LE SPORT ET LES LOISIRS"
     },
+    "sponsor": {
+      "jumpingSion": {
+        "name": "Jumping Sion",
+        "text": "Jusqu'en 2018, nous avons soutenu le Jumping Sion et ses concours équestres qui requièrent élégance et précision de la part des chevaux et de leurs cavaliers. Deux valeurs fortes pour notre entreprise."
+      },
+      "lucieMoreillon": {
+        "name": "Lucie Moreillon",
+        "text": "Maison Rouge encourage les jeunes dans leurs passions et les aider à atteindre leurs objectifs comme pour Lucie Moreillon, cadre A dressage poney national 2018."
+      },
+      "fcConthey": {
+        "name": "FC Conthey",
+        "text": "Depuis 2018, nous contribuons à l'intégration et au développement de la jeunesse valaisanne par le sport en soutenant le FC Conthey. Les valeurs du football comme la solidarité, l'esprit d'équipe et l'ouverture sur le monde sont aussi celles de notre entreprise."
+      },
+      "rallyeValais": {
+        "name": "Jonathan Hirschi - Rallye International Valais",
+        "text": "En 2015, nous embarquons et sillonnons les routes au côté du pilote suisse Jonathan Hirschi pour le Rallye International du Valais. Une aventure humaine qui restera gravée dans les esprits."
+      },
+      "spas": {
+        "name": "SPAS - Seaplane Pilots Association Switzerland",
+        "text": ""
+      }
+    },
+    "partenaires": {
+      "isovin": {
+        "title": "ISOVIN",
+        "text": "Inspirés par le terroir valaisan et ce qu'il a de meilleur à offrir, les pots isothermes Isovin sont créés de façon artisanale, entre tradition et modernité. Ils sont réalisés en bois de hêtre qui, grâce à son pouvoir isolant, garde les bouteilles au frais. Un objet naturel et écologique, à l'esthétique travaillée, qui trouvera sa place sur votre table et participera à vos meilleurs moments de convivialité."
+      },
+      "oouliri": {
+        "title": "OOULIRI",
+        "text": "Oouliri est une huilerie valaisanne spécialisée dans la production d'huiles de qualité supérieure, fabriquées à partir d'ingrédients régionaux. Les graines formant la matière première de nos huiles sont produites puis pressées dans la région, privilégiant les circuits courts pour minimiser l'impact environnemental et contribuer à l'économie locale."
+      }
+    },
     "visitSite": "Visiter le site"
   },
   "vignoble": {
@@ -185,6 +217,88 @@
     "password": "Mot de passe",
     "login": "Se connecter",
     "forgotPassword": "Mot de passe oublié ?",
-    "createBtn": "Créer mon compte"
+    "createBtn": "Créer mon compte",
+    "bannerTitle": "Mon compte",
+    "createTitle": "Créez votre compte",
+    "createSubtitle": "Saisissez votre adresse e-mail pour créer votre compte.",
+    "emailLabel": "Adresse e-mail",
+    "passwordLabel": "Mot de passe",
+    "firstNameLabel": "Prénom",
+    "lastNameLabel": "Nom",
+    "creating": "Création en cours...",
+    "createSubmit": "Créez votre compte",
+    "loggingIn": "Connexion en cours...",
+    "loginSubmit": "Connexion"
+  },
+  "sponsoring": {
+    "title": "Sponsoring",
+    "heading": "Maison Rouge sponsor de vos événements",
+    "subtitle": "Nous sommes fiers de soutenir la culture, le sport et les loisirs",
+    "jumpingSion": {
+      "name": "Jumping Sion",
+      "description": "Jusqu'en 2018, nous avons soutenu le Jumping Sion et ses concours équestres qui requièrent élégance et précision de la part des chevaux et de leurs cavaliers. Deux valeurs fortes pour notre entreprise."
+    },
+    "lucieMoreillon": {
+      "name": "Lucie Moreillon",
+      "description": "Maison Rouge encourage les jeunes dans leurs passions et les aider à atteindre leurs objectifs comme pour Lucie Moreillon, cadre A dressage poney national 2018."
+    },
+    "fcConthey": {
+      "name": "FC Conthey",
+      "description": "Depuis 2018, nous contribuons à l'intégration et au développement de la jeunesse valaisanne par le sport en soutenant le FC Conthey. Les valeurs du football comme la solidarité, l'esprit d'équipe et l'ouverture sur le monde sont aussi celles de notre entreprise."
+    },
+    "rallyeValais": {
+      "name": "Jonathan Hirschi - Rallye International Valais",
+      "description": "En 2015, nous embarquons et sillonnons les routes au côté du pilote suisse Jonathan Hirschi pour le Rallye International du Valais. Une aventure humaine qui restera gravée dans les esprits."
+    },
+    "spas": {
+      "name": "SPAS - Seaplane Pilots Association Switzerland",
+      "description": ""
+    }
+  },
+  "partenaires": {
+    "title": "Partenaires",
+    "heading": "Partenaires",
+    "isovin": {
+      "title": "ISOVIN",
+      "text": "Inspirés par le terroir valaisan et ce qu'il a de meilleur à offrir, les pots isothermes Isovin sont créés de façon artisanale, entre tradition et modernité. Ils sont réalisés en bois de hêtre qui, grâce à son pouvoir isolant, garde les bouteilles au frais. Un objet naturel et écologique, à l'esthétique travaillée, qui trouvera sa place sur votre table et participera à vos meilleurs moments de convivialité."
+    },
+    "oouliri": {
+      "title": "OOULIRI",
+      "text": "Oouliri est une huilerie valaisanne spécialisée dans la production d'huiles de qualité supérieure, fabriquées à partir d'ingrédients régionaux. Les graines formant la matière première de nos huiles sont produites puis pressées dans la région, privilégiant les circuits courts pour minimiser l'impact environnemental et contribuer à l'économie locale."
+    }
+  },
+  "account": {
+    "bannerTitle": "Mon compte",
+    "welcome": "Bienvenue,",
+    "myInfo": "Mes informations",
+    "emailLabel": "E-mail :",
+    "firstNameLabel": "Prénom :",
+    "lastNameLabel": "Nom :",
+    "edit": "Modifier",
+    "saving": "Enregistrement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "myOrders": "Mes commandes",
+    "loadingOrders": "Chargement des commandes...",
+    "noOrders": "Vous n'avez pas encore de commandes.",
+    "orderNumber": "N° commande",
+    "date": "Date",
+    "total": "Total",
+    "status": "Statut",
+    "statusPending": "En attente",
+    "statusProcessing": "En traitement",
+    "statusShipped": "Expédiée",
+    "statusDelivered": "Livrée",
+    "statusCancelled": "Annulée",
+    "logout": "Déconnexion",
+    "loading": "Chargement..."
+  },
+  "vinsFilter": {
+    "vinsBlanc": "Vins Blanc",
+    "vinRose": "Vin Rosé",
+    "vinsRouge": "Vins Rouge",
+    "creations": "Créations",
+    "vinsApprentis": "Vins des Apprentis",
+    "produitsDerives": "Produits Dérivés"
   }
 }
