@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maisonrouge.swigs.online/sitemap.xml
+
+# Block admin and API paths
+Disallow: /api/
