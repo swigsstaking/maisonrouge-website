@@ -66,7 +66,8 @@ async function prerender() {
         });
 
         await page.waitForSelector('#root', { timeout: 5000 });
-        await new Promise(r => setTimeout(r, 1500));
+        // Wait for API data to load (product descriptions, etc.)
+        await new Promise(r => setTimeout(r, 4000));
 
         let html = await page.content();
 

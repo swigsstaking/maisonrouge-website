@@ -5,26 +5,19 @@ import { useSiteInfo } from '../hooks/useSiteInfo';
 import { useQuery } from '@tanstack/react-query';
 import { useCart } from '../context/CartContext';
 import { useLanguage } from '../context/LanguageContext';
+import productTranslations from '../data/productTranslations.json';
+import staticProducts from '../data/staticProducts.js';
 
-const KNOWN_KEYS = [
-  'Cépage',
-  'Robe',
-  'Nez',
-  'Bouche',
-  'Alcool',
-  'Température de service',
-  'Conservation',
-  'Elevage',
-  'Élevage',
-  'Appellation',
-  'Accords gourmands',
-  'Allergènes',
-  'Millésime',
-];
+const KNOWN_KEYS_BY_LANG = {
+  fr: ['Cépage', 'Robe', 'Nez', 'Bouche', 'Alcool', 'Température de service', 'Conservation', 'Elevage', 'Élevage', 'Appellation', 'Accords gourmands', 'Allergènes', 'Millésime'],
+  en: ['Grape variety', 'Colour', 'Nose', 'Palate', 'Alcohol', 'Serving temperature', 'Ageing potential', 'Ageing', 'Appellation', 'Food pairing', 'Allergens', 'Vintage'],
+  de: ['Rebsorte', 'Farbe', 'Nase', 'Gaumen', 'Alkohol', 'Serviertemperatur', 'Lagerfähigkeit', 'Ausbau', 'Appellation', 'Speisenempfehlung', 'Allergene', 'Jahrgang'],
+};
 
-function parseDescription(description) {
+function parseDescription(description, lang = 'fr') {
   if (!description) return { intro: '', details: [] };
 
+  const KNOWN_KEYS = KNOWN_KEYS_BY_LANG[lang] || KNOWN_KEYS_BY_LANG.fr;
   const lines = description.split('\n');
   const intro = [];
   const details = [];
@@ -62,10 +55,14 @@ const ProductDetail = () => {
   const siteInfo = useSiteInfo();
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
-  const { t, localePath } = useLanguage();
+  const { t, localePath, lang } = useLanguage();
   const [added, setAdded] = useState(false);
 
-  const { data: product, isLoading } = useQuery({
+  // Static product data (renders immediately for SSG)
+  const staticProduct = staticProducts.find(p => p.slug === slug);
+
+  // API data (loads async for cart/enhanced features)
+  const { data: apiProduct } = useQuery({
     queryKey: ['product', slug],
     queryFn: async () => {
       const res = await fetch(`${API_URL}/products/public/${slug}?siteId=maisonrouge`);
@@ -75,25 +72,12 @@ const ProductDetail = () => {
     },
   });
 
-  if (isLoading) {
-    return (
-      <>
-        <SEOHead page="vins" />
-        {/* Banner */}
-        <section className="relative h-32 md:h-48 w-full overflow-hidden">
-          <img
-            src="/banner-small1.jpg"
-            alt="Chargement..."
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50" />
-        </section>
-        <div className="flex items-center justify-center py-24">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary-600"></div>
-        </div>
-      </>
-    );
-  }
+  // Merge: static data for immediate render, API data for cart features
+  const product = apiProduct || (staticProduct ? {
+    ...staticProduct,
+    price: { amount: staticProduct.price, currency: 'CHF' },
+    images: [staticProduct.image],
+  } : null);
 
   if (!product) {
     return (
@@ -126,7 +110,9 @@ const ProductDetail = () => {
     );
   }
 
-  const { intro, details } = parseDescription(product.description);
+  const translatedDesc = productTranslations[product.slug]?.[lang];
+  const descriptionToUse = translatedDesc || product.description;
+  const { intro, details } = parseDescription(descriptionToUse, lang);
   const mainImage = product.images?.[0];
 
   return (
