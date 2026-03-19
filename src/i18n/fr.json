@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "vignoble": "Vignoble",
+    "vins": "Vins",
+    "apprentis": "Cuvée des Apprentis",
+    "oenotourisme": "Oenotourisme",
+    "partenaires": "Partenaires",
+    "sponsoring": "Sponsoring",
+    "actualite": "Actualité",
+    "contact": "Contact"
+  },
+  "header": {
+    "monCompte": "MON COMPTE",
+    "panier": "PANIER",
+    "tagline": "Le vin du tailleur de pierre"
+  },
+  "home": {
+    "tab": {
+      "apropos": "A propos",
+      "valais": "Le Valais viticole",
+      "sponsoring": "Sponsoring",
+      "partenaires": "Partenaires"
+    },
+    "title": {
+      "cave": "LA CAVE MAISON ROUGE"
+    },
+    "intro": "Maison rouge c'est des vins de caractère élaborés par une équipe soudée et motivée répartie dans divers secteurs: vigne, cave, administration et vente. Nous encavons uniquement notre propre production issue de nos 18 hectares répartis entre Sierre et Leytron.",
+    "philosophie": "Notre philosophie peut être résumée en 4 mots : Authenticité, finesse, hommage et partage.",
+    "authenticite": {
+      "title": "AUTHENTICITÉ DES CÉPAGES",
+      "text": "Pour chaque cépage nous sélectionnons la parcelle au terroir et au microclimat la plus adaptée. Ce travail se poursuit à la cave pour retranscrire les caractéristiques propres à chacun. Cette quête de l'authenticité est la fierté de notre entreprise viticole."
+    },
+    "finesse": {
+      "title": "FINESSE DES CRUS",
+      "text": "Les vinifications sont adaptées en finesse à chaque cru: durée des cuvaisons, température de fermentation et choix de barriques. Tout est fait pour ressortir l'élégance et la beauté de nos vins quitte à en prendre soin entre 8 et 10 années (vins de garde élevés sous-bois en barrique). Au bilan, une large gamme de vins de haute tenue, des crus de caractère solides et charpentés qui sauront émerveiller vos papilles."
+    },
+    "hommage": {
+      "title": "HOMMAGE AU TERROIR VALAISAN",
+      "text": "A la fois clin d'oeil et témoignage du terroir et de l'histoire du canton, nos créations portent des noms tirés du patois valaisan. Mûris sur les coteaux rocailleux baignés de soleil de Bâtassé et Molignon, ces créations rendent hommage aux bâtisseurs de ces vignes en terrasses soutenues par d'imposants murs de pierres sèches. Et pour bien signer ces oeuvres uniques, nous les marquons du sceau d'un tailleur de pierre anonyme, bâtisseur de cathédrale."
+    },
+    "partage": {
+      "title": "PARTAGE D'UNE PASSION",
+      "text": "Maison rouge est aussi une entreprise formatrice. Elle a pour vocation de transmettre et partager le savoir et la passion du vin à plusieurs apprentis placés sous sa responsabilité. Ces jeunes se voient confier des responsabilités. Ils ont la possibilité de vivre des expériences enrichissantes et de créer leur vin des apprentis."
+    },
+    "valais": {
+      "title": "LE VALAIS VITICOLE : UN VIGNOBLE ET DES CRUS D'EXCEPTION",
+      "culture": {
+        "title": "UNE CULTURE ANCESTRALE DU VIN",
+        "text1": "La viticulture et le Valais, c'est une belle histoire qui remonte à plusieurs milliers d'année. Des pépins de raisins datant de l'Age de fer (800-500 av. JC) ont été découverts dans le Haut-Valais, près de Brigue.",
+        "text2": "Toutefois, les chercheurs considèrent que la viticulture, au sens propre du terme, a été ancrée dans la région à l'époque romaine.",
+        "text3": "Aujourd'hui, cette histoire entre l'homme et les vignes valaisannes perdure. Le Valais viticole couvre 4842 ha. Il se caractérise par une extraordinaire variété de micro-climats, de cépages autochtones et d'arômes dont composent les vignerons."
+      },
+      "richesse": {
+        "title": "UNE RICHESSE EXTRAORDINAIRE DES CUVÉES",
+        "blancs": "Du côté des blancs : La Petite Arvine tient la vedette. L'Humagne blanche, l'Amigne ou des cépages plus rares comme la Rèze ou le Lafnetscha font aussi la richesse du terroir valaisan. Sans oublier les grands classiques locaux ou internationaux que sont le Chasselas (appelé Fendant), le Rhin, le Sylvaner (appelé Johannisberg), le Savagnin blanc (appelé Païen ou Heida) et la Marsanne (appelée Ermitage).",
+        "rouges": "Du côté des rouges : Le Cornalin et l'Humagne rouge sont les cépages régionaux les plus réputés. Ils sont complétés par le Pinot noir, le Gamay, la Syrah, le Merlot.",
+        "conclusion": "Tel un artiste, la cave Maison Rouge joue avec la très grande diversité des sols et climats de la région pour produire des cuvées dévoilant toute la typicité du canton du Valais."
+      }
+    },
+    "sponsoring": {
+      "title": "MAISON ROUGE SPONSOR DE VOS ÉVÉNEMENTS",
+      "subtitle": "NOUS SOMMES FIERS DE SOUTENIR LA CULTURE, LE SPORT ET LES LOISIRS"
+    },
+    "visitSite": "Visiter le site"
+  },
+  "vignoble": {
+    "title": "VIGNOBLE",
+    "text1": "Les 18 hectares de vignes (8 en propriété – 10 en location) travaillés par l'équipe de Maison Rouge sont situés dans le Valais central, entre Sierre et Leytron. Cet étalement géographique permet de disposer d'une variété de profils géologiques et de microclimats.",
+    "text2": "Chaque cépage cultivé par l'équipe viticole dispose de terres et de conditions climatiques idéales. Du Païen, de l'Arvine, du Johannisberg, de l'Humagne Blanc, du Cornalin de l'Humagne Rouge et du Pinot Noir ont été plantés dans la région sierroise. Le vignoble sédunois a été dédié à la Marsanne blanche et au Tempranillo. Johannisberg, Arvine, Païen, Merlot et Syrah prospèrent quant à eux dans le vignoble de Chamoson. Conthey accueille un domaine de Petite Arvine, de Fendant et de Merlot alors que Humagne rouge et Humagne blanc profitent du terroir de Leytron.",
+    "text3": "Depuis les débuts de l'entreprise, l'équipe s'est attelée à la modernisation du vignoble. Toutes les parcelles sont désormais cultivées sur fil et permettent une petite mécanisation bien utile en termes de rentabilité et d'efficience. Maison Rouge a à coeur de produire des vins dans le respect de la nature. Ainsi, tout le domaine est cultivé en BIO et à partir de 2021, il est en reconversion biologique. Ainsi, tout le domaine est cultivé selon les principes de la biodynamie.",
+    "text4": "Pour veiller sur ce précieux patrimoine viticole, l'entreprise s'est assuré fin 2016 les services d'un professionnel compétent en la personne de Georges Emery, nouveau directeur technique du vignoble de Maison Rouge.",
+    "cta": "Découvrez sans plus tarder nos vins."
+  },
+  "vins": {
+    "title": "NOS VINS",
+    "filter": {
+      "all": "Tout l'assortiment"
+    },
+    "addToCart": "AJOUTER AU PANIER",
+    "added": "Ajouté !"
+  },
+  "product": {
+    "quantity": "Quantité",
+    "addToCart": "AJOUTER AU PANIER",
+    "added": "Ajouté !",
+    "backToWines": "Nos Vins",
+    "notFound": "Produit introuvable",
+    "notFoundText": "Le produit que vous recherchez n'existe pas ou a été retiré.",
+    "backLink": "Retour aux vins",
+    "noImage": "Pas d'image",
+    "content": "Contenance"
+  },
+  "oenotourisme": {
+    "title": "OENOTOURISME",
+    "subtitle": "Partagez un moment convivial autour de vins de caractère",
+    "text1": "Avec vos proches ou collègues, partez à la découverte de nos véritables artisans et apprenez en plus sur nos vignobles et l'art du vin.",
+    "text2": "Sur rendez-vous, nous proposons des excursions avec visite et dégustation de nos nectars de caractère. Le tout accompagné de nos professionnels qui vous dévoileront quelques-uns de nos secrets les mieux gardés et émerveilleront vos papilles gustatives.",
+    "text3": "Ils vous initieront à l'oenologie et vous conseilleront sur le vin le mieux adapté à vos goûts et attentes. D'un vin de table à un grand cru, ils sauront à coup sûr vous satisfaire et trouver votre bonheur !",
+    "text4": "N'attendez plus et réservez dès maintenant votre visite via le formulaire en ligne ou par téléphone (réservation préalable obligatoire).",
+    "tarifs": "Tarifs",
+    "tarif1": {
+      "title": "Dégustation 5 vins",
+      "duration": "Durée 1h-1h30",
+      "price": "CHF 15.00/personne"
+    },
+    "tarif2": {
+      "title": "Dégustation et visite de cave",
+      "duration": "Durée 2h",
+      "price": "CHF 20.00/personne"
+    },
+    "tarif3": {
+      "title": "Planchette apéro",
+      "duration": "",
+      "price": "CHF 10.00/personne"
+    },
+    "cta": "RÉSERVEZ VOTRE VISITE"
+  },
+  "apprentis": {
+    "title": "CUVÉE DES APPRENTIS",
+    "subtitle": "Un savoir et une passion du vin transmis aux générations futures",
+    "text": "Depuis plusieurs années, Maison Rouge, autrefois Flaction vins, partage son savoir et sa passion du vin avec les apprentis placés sous sa responsabilité. Ces jeunes ont la chance de réaliser une cuvée de leur choix. Ces « vins des apprentis » visent à leur apprendre l'ampleur de la tâche, de la vigne à la vente. De quoi assurer une relève compétente pour la viticulture valaisanne.",
+    "discover": "Découvrez les vins des apprentis Maison Rouge !"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "Contactez-nous aujourd'hui !",
+    "description": "N'hésitez pas à nous envoyer votre demande et vos questions, nous vous répondrons dans les meilleurs délais.",
+    "localisation": "Localisation",
+    "heures": "Heures d'ouverture",
+    "email": "Email",
+    "form": {
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "envoyer": "Envoyer",
+      "sending": "Envoi en cours...",
+      "prenomPlaceholder": "Votre prénom",
+      "nomPlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.ch",
+      "messagePlaceholder": "Votre message..."
+    },
+    "success": {
+      "title": "Message envoyé !",
+      "text": "Nous vous répondrons dans les plus brefs délais.",
+      "another": "Envoyer un autre message"
+    },
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "hours": {
+      "lundiJeudi": "Lundi au jeudi",
+      "lundiJeudiH": "7h30-12h / 13h30-18h",
+      "vendredi": "Vendredi",
+      "vendrediH": "7h30-12h / 13h30-17h",
+      "weekend": "Samedi et dimanche",
+      "weekendH": "Fermé"
+    }
+  },
+  "cart": {
+    "title": "PANIER",
+    "empty": "Votre panier est vide.",
+    "seeWines": "Voir nos vins",
+    "product": "Produit",
+    "unitPrice": "Prix unitaire",
+    "quantity": "Quantité",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "totalLabel": "Total",
+    "order": "COMMANDER",
+    "continueShopping": "Continuer vos achats",
+    "freeShipping": "LIVRAISON GRATUITE"
+  },
+  "footer": {
+    "apropos": "À propos",
+    "conditions": "Conditions générales & Mentions légales",
+    "mail": "Mail",
+    "phone": "Nous appeler",
+    "location": "Nous trouver",
+    "copyright": "Site créé par"
+  },
+  "auth": {
+    "createAccount": "Créer un compte",
+    "alreadyRegistered": "Déjà inscrit ?",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "login": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "createBtn": "Créer mon compte"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "vignoble": "Vineyard",
+    "vins": "Our wines",
+    "apprentis": "Lo chaï - Cuvee of apprentices",
+    "oenotourisme": "Wine tourism",
+    "partenaires": "Partners",
+    "sponsoring": "Sponsorship",
+    "actualite": "News",
+    "contact": "Contact us"
+  },
+  "header": {
+    "monCompte": "MY ACCOUNT",
+    "panier": "CART",
+    "tagline": "The wine of the stonemason"
+  },
+  "home": {
+    "tab": {
+      "apropos": "Maison Rouge Wines",
+      "valais": "The Valais wine region",
+      "sponsoring": "Sponsorship",
+      "partenaires": "Partners"
+    },
+    "title": {
+      "cave": "THE MAISON ROUGE CELLAR"
+    },
+    "intro": "Maison Rouge produces wines of character, crafted by a close-knit and motivated team working across various sectors: vineyard, cellar, administration and sales. We exclusively vinify our own production from our 18 hectares spread between Sierre and Leytron.",
+    "philosophie": "Our philosophy can be summed up in 4 words: Authenticity, finesse, tribute and sharing.",
+    "authenticite": {
+      "title": "AUTHENTICITY OF GRAPE VARIETIES",
+      "text": "For each grape variety, we select the plot with the most suitable terroir and microclimate. This work continues in the cellar to faithfully express each variety's unique characteristics. This quest for authenticity is the pride of our winemaking estate."
+    },
+    "finesse": {
+      "title": "FINESSE OF THE VINTAGES",
+      "text": "The vinification process is finely adapted to each vintage: maceration duration, fermentation temperature and barrel selection. Everything is done to bring out the elegance and beauty of our wines, even if it means caring for them for 8 to 10 years (oak-aged reserve wines). The result is a wide range of high-quality wines, solid and full-bodied vintages of character that will delight your palate."
+    },
+    "hommage": {
+      "title": "A TRIBUTE TO THE VALAIS TERROIR",
+      "text": "Both a nod and a testimony to the terroir and the history of the canton, our creations bear names drawn from the Valais dialect. Ripened on the sun-drenched rocky slopes of Batasse and Molignon, these creations pay tribute to the builders of these terraced vineyards supported by imposing dry stone walls. And to truly sign these unique works, we mark them with the seal of an anonymous stonemason, a cathedral builder."
+    },
+    "partage": {
+      "title": "SHARING A PASSION",
+      "text": "Maison Rouge is also a training company. Its mission is to transmit and share the knowledge and passion for wine with several apprentices placed under its responsibility. These young people are entrusted with responsibilities. They have the opportunity to live enriching experiences and create their own apprentice wine."
+    },
+    "valais": {
+      "title": "THE VALAIS WINE REGION: AN EXCEPTIONAL VINEYARD AND OUTSTANDING VINTAGES",
+      "culture": {
+        "title": "AN ANCESTRAL WINE CULTURE",
+        "text1": "Viticulture and the Valais share a beautiful story that goes back thousands of years. Grape seeds dating from the Iron Age (800-500 BC) were discovered in the Upper Valais, near Brig.",
+        "text2": "However, researchers believe that viticulture in the true sense of the word was established in the region during Roman times.",
+        "text3": "Today, this story between man and the Valais vines endures. The Valais wine region covers 4,842 hectares. It is characterised by an extraordinary variety of microclimates, indigenous grape varieties and aromas that winemakers compose with."
+      },
+      "richesse": {
+        "title": "AN EXTRAORDINARY RICHNESS OF VINTAGES",
+        "blancs": "On the white side: Petite Arvine takes centre stage. Humagne Blanche, Amigne or rarer varieties such as Reze or Lafnetscha also contribute to the richness of the Valais terroir. Not forgetting the great local or international classics: Chasselas (called Fendant), Rhin, Sylvaner (called Johannisberg), Savagnin Blanc (called Paien or Heida) and Marsanne (called Ermitage).",
+        "rouges": "On the red side: Cornalin and Humagne Rouge are the most renowned regional varieties. They are complemented by Pinot Noir, Gamay, Syrah and Merlot.",
+        "conclusion": "Like an artist, the Maison Rouge cellar plays with the great diversity of soils and climates in the region to produce vintages that reveal all the typicity of the Canton of Valais."
+      }
+    },
+    "sponsoring": {
+      "title": "MAISON ROUGE SPONSOR OF YOUR EVENTS",
+      "subtitle": "WE ARE PROUD TO SUPPORT CULTURE, SPORT AND LEISURE"
+    },
+    "visitSite": "Visit website"
+  },
+  "vignoble": {
+    "title": "VINEYARD",
+    "text1": "The 18 hectares of vines (8 owned, 10 leased) worked by the Maison Rouge team are located in central Valais, between Sierre and Leytron. This geographical spread provides a variety of geological profiles and microclimates.",
+    "text2": "Each grape variety cultivated by the viticultural team has ideal land and climatic conditions. Paien, Arvine, Johannisberg, Humagne Blanc, Cornalin, Humagne Rouge and Pinot Noir have been planted in the Sierre region. The Sion vineyard has been dedicated to Marsanne Blanche and Tempranillo. Johannisberg, Arvine, Paien, Merlot and Syrah thrive in the Chamoson vineyard. Conthey hosts a Petite Arvine, Fendant and Merlot estate, while Humagne Rouge and Humagne Blanc benefit from the Leytron terroir.",
+    "text3": "Since the company's beginnings, the team has been committed to modernising the vineyard. All plots are now wire-trained, allowing small-scale mechanisation that is very useful in terms of profitability and efficiency. Maison Rouge is dedicated to producing wines that respect nature. The entire estate is cultivated organically and since 2021 has been in organic conversion. The entire estate is cultivated according to biodynamic principles.",
+    "text4": "To watch over this precious viticultural heritage, the company secured the services of a competent professional at the end of 2016 in the person of Georges Emery, new technical director of the Maison Rouge vineyard.",
+    "cta": "Discover our wines now."
+  },
+  "vins": {
+    "title": "OUR WINES",
+    "filter": {
+      "all": "Full assortment"
+    },
+    "addToCart": "ADD TO CART",
+    "added": "Added!"
+  },
+  "product": {
+    "quantity": "Quantity",
+    "addToCart": "ADD TO CART",
+    "added": "Added!",
+    "backToWines": "Our Wines",
+    "notFound": "Product not found",
+    "notFoundText": "The product you are looking for does not exist or has been removed.",
+    "backLink": "Back to wines",
+    "noImage": "No image",
+    "content": "Content"
+  },
+  "oenotourisme": {
+    "title": "WINE TOURISM",
+    "subtitle": "Share a convivial moment around wines of character",
+    "text1": "With your loved ones or colleagues, set off to discover our true artisans and learn more about our vineyards and the art of wine.",
+    "text2": "By appointment, we offer excursions with tours and tastings of our characterful nectars. All accompanied by our professionals who will reveal some of our best-kept secrets and delight your taste buds.",
+    "text3": "They will introduce you to oenology and advise you on the wine best suited to your tastes and expectations. From a table wine to a grand cru, they will surely satisfy you and help you find your favourite!",
+    "text4": "Don't wait any longer and book your visit now via the online form or by phone (advance booking required).",
+    "tarifs": "Prices",
+    "tarif1": {
+      "title": "5-wine tasting",
+      "duration": "Duration 1h-1h30",
+      "price": "CHF 15.00/person"
+    },
+    "tarif2": {
+      "title": "Tasting and cellar visit",
+      "duration": "Duration 2h",
+      "price": "CHF 20.00/person"
+    },
+    "tarif3": {
+      "title": "Aperitif platter",
+      "duration": "",
+      "price": "CHF 10.00/person"
+    },
+    "cta": "BOOK YOUR VISIT"
+  },
+  "apprentis": {
+    "title": "APPRENTICE WINES",
+    "subtitle": "Knowledge and passion for wine passed on to future generations",
+    "text": "For several years, Maison Rouge, formerly Flaction Vins, has been sharing its knowledge and passion for wine with apprentices placed under its responsibility. These young people have the chance to create a vintage of their choice. These 'apprentice wines' aim to teach them the scope of the task, from vine to sale. Ensuring a competent succession for Valais viticulture.",
+    "discover": "Discover the Maison Rouge apprentice wines!"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "Contact us today!",
+    "description": "Do not hesitate to send us your request and questions, we will get back to you as soon as possible.",
+    "localisation": "Location",
+    "heures": "Opening hours",
+    "email": "Email",
+    "form": {
+      "prenom": "First name",
+      "nom": "Last name",
+      "email": "E-mail",
+      "message": "Message",
+      "envoyer": "Send",
+      "sending": "Sending...",
+      "prenomPlaceholder": "Your first name",
+      "nomPlaceholder": "Your last name",
+      "emailPlaceholder": "your@email.ch",
+      "messagePlaceholder": "Your message..."
+    },
+    "success": {
+      "title": "Message sent!",
+      "text": "We will get back to you as soon as possible.",
+      "another": "Send another message"
+    },
+    "error": "An error occurred. Please try again.",
+    "hours": {
+      "lundiJeudi": "Monday to Thursday",
+      "lundiJeudiH": "7:30am-12pm / 1:30pm-6pm",
+      "vendredi": "Friday",
+      "vendrediH": "7:30am-12pm / 1:30pm-5pm",
+      "weekend": "Saturday and Sunday",
+      "weekendH": "Closed"
+    }
+  },
+  "cart": {
+    "title": "CART",
+    "empty": "Your cart is empty.",
+    "seeWines": "See our wines",
+    "product": "Product",
+    "unitPrice": "Unit price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "totalLabel": "Total",
+    "order": "ORDER",
+    "continueShopping": "Continue shopping",
+    "freeShipping": "FREE SHIPPING"
+  },
+  "footer": {
+    "apropos": "About us",
+    "conditions": "Terms & Conditions and Legal Notice",
+    "mail": "Mail",
+    "phone": "Call us",
+    "location": "Find us",
+    "copyright": "Website created by"
+  },
+  "auth": {
+    "createAccount": "Create an account",
+    "alreadyRegistered": "Already registered?",
+    "email": "E-mail",
+    "password": "Password",
+    "login": "Log in",
+    "forgotPassword": "Forgot your password?",
+    "createBtn": "Create my account"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "nav": {
+    "vignoble": "Weinberg",
+    "vins": "Unsere Weine",
+    "apprentis": "Lehrlingsweine",
+    "oenotourisme": "Weintourismus",
+    "partenaires": "Partner",
+    "sponsoring": "Sponsoring",
+    "actualite": "Aktuelles",
+    "contact": "Kontakt"
+  },
+  "header": {
+    "monCompte": "MEIN KONTO",
+    "panier": "WARENKORB",
+    "tagline": "Der Wein des Steinmetzen"
+  },
+  "home": {
+    "tab": {
+      "apropos": "Über uns",
+      "valais": "Das Walliser Weinbaugebiet",
+      "sponsoring": "Sponsoring",
+      "partenaires": "Partner"
+    },
+    "title": {
+      "cave": "DER WEINKELLER MAISON ROUGE"
+    },
+    "intro": "Maison Rouge produziert charaktervolle Weine, hergestellt von einem engagierten und motivierten Team in verschiedenen Bereichen: Weinberg, Keller, Verwaltung und Verkauf. Wir keltern ausschliesslich unsere eigene Produktion aus unseren 18 Hektar zwischen Sierre und Leytron.",
+    "philosophie": "Unsere Philosophie lässt sich in 4 Worten zusammenfassen: Authentizität, Finesse, Hommage und Teilen.",
+    "authenticite": {
+      "title": "AUTHENTIZITÄT DER REBSORTEN",
+      "text": "Für jede Rebsorte wählen wir die Parzelle mit dem am besten geeigneten Terroir und Mikroklima. Diese Arbeit setzt sich im Keller fort, um die einzigartigen Eigenschaften jeder Sorte originalgetreu wiederzugeben. Dieses Streben nach Authentizität ist der Stolz unseres Weinguts."
+    },
+    "finesse": {
+      "title": "FINESSE DER GEWÄCHSE",
+      "text": "Die Vinifikation wird für jedes Gewächs fein abgestimmt: Dauer der Maischung, Gärtemperatur und Auswahl der Fässer. Alles wird getan, um die Eleganz und Schönheit unserer Weine hervorzuheben, selbst wenn dies eine Pflege von 8 bis 10 Jahren erfordert (lagerfähige Weine im Barrique ausgebaut). Im Ergebnis eine breite Palette hochwertiger Weine, solide und körperreiche Gewächse mit Charakter, die Ihren Gaumen begeistern werden."
+    },
+    "hommage": {
+      "title": "HOMMAGE AN DAS WALLISER TERROIR",
+      "text": "Zugleich Augenzwinkern und Zeugnis des Terroirs und der Geschichte des Kantons tragen unsere Kreationen Namen aus dem Walliser Dialekt. Gereift an den sonnendurchfluteten felsigen Hängen von Bâtassé und Molignon, zollen diese Kreationen den Erbauern dieser Terrassenweinberge Tribut, die von imposanten Trockensteinmauern gestützt werden. Und um diese einzigartigen Werke zu signieren, versehen wir sie mit dem Siegel eines anonymen Steinmetzen, eines Kathedralenbauers."
+    },
+    "partage": {
+      "title": "EINE LEIDENSCHAFT TEILEN",
+      "text": "Maison Rouge ist auch ein Ausbildungsbetrieb. Seine Berufung ist es, das Wissen und die Leidenschaft für den Wein an mehrere Lehrlinge weiterzugeben, die seiner Verantwortung unterstellt sind. Diesen jungen Menschen werden Verantwortungen übertragen. Sie haben die Möglichkeit, bereichernde Erfahrungen zu machen und ihren eigenen Lehrlingswein zu kreieren."
+    },
+    "valais": {
+      "title": "DAS WALLISER WEINBAUGEBIET: EIN AUSSERGEWÖHNLICHER WEINBERG UND HERAUSRAGENDE GEWÄCHSE",
+      "culture": {
+        "title": "EINE JAHRTAUSENDEALTE WEINKULTUR",
+        "text1": "Weinbau und das Wallis verbindet eine schöne Geschichte, die Tausende von Jahren zurückreicht. Traubenkerne aus der Eisenzeit (800-500 v. Chr.) wurden im Oberwallis bei Brig entdeckt.",
+        "text2": "Die Forscher gehen jedoch davon aus, dass der Weinbau im eigentlichen Sinne in der Römerzeit in der Region verankert wurde.",
+        "text3": "Heute besteht diese Geschichte zwischen Mensch und Walliser Reben fort. Das Walliser Weinbaugebiet umfasst 4'842 ha. Es zeichnet sich durch eine aussergewöhnliche Vielfalt an Mikroklimaten, autochthonen Rebsorten und Aromen aus, mit denen die Winzer komponieren."
+      },
+      "richesse": {
+        "title": "EIN AUSSERGEWÖHNLICHER REICHTUM AN CUVÉES",
+        "blancs": "Bei den Weissweinen: Die Petite Arvine steht im Mittelpunkt. Humagne Blanche, Amigne oder seltenere Rebsorten wie Rèze oder Lafnetscha bereichern ebenfalls das Walliser Terroir. Nicht zu vergessen die grossen lokalen oder internationalen Klassiker: Chasselas (Fendant genannt), Rhin, Sylvaner (Johannisberg genannt), Savagnin Blanc (Païen oder Heida genannt) und Marsanne (Ermitage genannt).",
+        "rouges": "Bei den Rotweinen: Cornalin und Humagne Rouge sind die renommiertesten regionalen Rebsorten. Sie werden ergänzt durch Pinot Noir, Gamay, Syrah und Merlot.",
+        "conclusion": "Wie ein Künstler spielt der Weinkeller Maison Rouge mit der grossen Vielfalt der Böden und Klimazonen der Region, um Cuvées zu produzieren, die die ganze Typizität des Kantons Wallis offenbaren."
+      }
+    },
+    "sponsoring": {
+      "title": "MAISON ROUGE SPONSOR IHRER VERANSTALTUNGEN",
+      "subtitle": "WIR SIND STOLZ, KULTUR, SPORT UND FREIZEIT ZU UNTERSTÜTZEN"
+    },
+    "visitSite": "Website besuchen"
+  },
+  "vignoble": {
+    "title": "WEINBERG",
+    "text1": "Die 18 Hektar Rebfläche (8 im Eigentum – 10 gepachtet), die vom Team der Maison Rouge bewirtschaftet werden, befinden sich im Zentralwallis zwischen Sierre und Leytron. Diese geografische Verteilung bietet eine Vielfalt geologischer Profile und Mikroklimate.",
+    "text2": "Jede vom Weinbauteam kultivierte Rebsorte verfügt über ideale Boden- und Klimabedingungen. Païen, Arvine, Johannisberg, Humagne Blanc, Cornalin, Humagne Rouge und Pinot Noir wurden in der Region Sierre angepflanzt. Der Weinberg von Sitten wurde der Marsanne Blanche und dem Tempranillo gewidmet. Johannisberg, Arvine, Païen, Merlot und Syrah gedeihen im Weinberg von Chamoson. Conthey beherbergt ein Gut mit Petite Arvine, Fendant und Merlot, während Humagne Rouge und Humagne Blanc vom Terroir in Leytron profitieren.",
+    "text3": "Seit den Anfängen des Unternehmens hat sich das Team der Modernisierung des Weinbergs gewidmet. Alle Parzellen werden heute im Drahtrahmen kultiviert und ermöglichen eine kleine Mechanisierung, die in Bezug auf Rentabilität und Effizienz sehr nützlich ist. Maison Rouge liegt es am Herzen, Weine im Einklang mit der Natur zu produzieren. Das gesamte Gut wird biologisch bewirtschaftet und befindet sich seit 2021 in biologischer Umstellung. Das gesamte Gut wird nach den Prinzipien der Biodynamie bewirtschaftet.",
+    "text4": "Um über dieses wertvolle Weinbauerbe zu wachen, sicherte sich das Unternehmen Ende 2016 die Dienste eines kompetenten Fachmanns in der Person von Georges Emery, dem neuen technischen Direktor des Weinbergs von Maison Rouge.",
+    "cta": "Entdecken Sie jetzt unsere Weine."
+  },
+  "vins": {
+    "title": "UNSERE WEINE",
+    "filter": {
+      "all": "Gesamtes Sortiment"
+    },
+    "addToCart": "IN DEN WARENKORB",
+    "added": "Hinzugefügt!"
+  },
+  "product": {
+    "quantity": "Menge",
+    "addToCart": "IN DEN WARENKORB",
+    "added": "Hinzugefügt!",
+    "backToWines": "Unsere Weine",
+    "notFound": "Produkt nicht gefunden",
+    "notFoundText": "Das gesuchte Produkt existiert nicht oder wurde entfernt.",
+    "backLink": "Zurück zu den Weinen",
+    "noImage": "Kein Bild",
+    "content": "Inhalt"
+  },
+  "oenotourisme": {
+    "title": "WEINTOURISMUS",
+    "subtitle": "Teilen Sie einen geselligen Moment rund um charaktervolle Weine",
+    "text1": "Begeben Sie sich mit Ihren Liebsten oder Kollegen auf die Entdeckung unserer wahren Handwerker und erfahren Sie mehr über unsere Weinberge und die Kunst des Weins.",
+    "text2": "Auf Anfrage bieten wir Ausflüge mit Besichtigung und Verkostung unserer charaktervollen Tropfen an. Begleitet von unseren Fachleuten, die Ihnen einige unserer bestgehüteten Geheimnisse verraten und Ihren Gaumen verzaubern werden.",
+    "text3": "Sie werden Sie in die Önologie einführen und Sie über den Wein beraten, der am besten zu Ihrem Geschmack und Ihren Erwartungen passt. Vom Tafelwein bis zum Grand Cru werden sie Sie sicher zufriedenstellen und Ihren Favoriten finden!",
+    "text4": "Warten Sie nicht länger und buchen Sie jetzt Ihren Besuch über das Online-Formular oder telefonisch (Voranmeldung erforderlich).",
+    "tarifs": "Preise",
+    "tarif1": {
+      "title": "Degustation 5 Weine",
+      "duration": "Dauer 1h-1h30",
+      "price": "CHF 15.00/Person"
+    },
+    "tarif2": {
+      "title": "Degustation und Kellerbesichtigung",
+      "duration": "Dauer 2h",
+      "price": "CHF 20.00/Person"
+    },
+    "tarif3": {
+      "title": "Apéro-Platte",
+      "duration": "",
+      "price": "CHF 10.00/Person"
+    },
+    "cta": "BUCHEN SIE IHREN BESUCH"
+  },
+  "apprentis": {
+    "title": "LEHRLINGSWEINE",
+    "subtitle": "Wissen und Leidenschaft für den Wein an zukünftige Generationen weitergegeben",
+    "text": "Seit mehreren Jahren teilt Maison Rouge, ehemals Flaction Vins, sein Wissen und seine Leidenschaft für den Wein mit den Lehrlingen, die seiner Verantwortung unterstellt sind. Diese jungen Menschen haben die Chance, eine Cuvée ihrer Wahl zu kreieren. Diese «Lehrlingsweine» sollen ihnen den Umfang der Aufgabe vom Weinberg bis zum Verkauf vermitteln. So wird eine kompetente Nachfolge für den Walliser Weinbau sichergestellt.",
+    "discover": "Entdecken Sie die Lehrlingsweine von Maison Rouge!"
+  },
+  "contact": {
+    "title": "KONTAKT",
+    "subtitle": "Kontaktieren Sie uns noch heute!",
+    "description": "Zögern Sie nicht, uns Ihre Anfrage und Fragen zu senden. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "localisation": "Standort",
+    "heures": "Öffnungszeiten",
+    "email": "E-Mail",
+    "form": {
+      "prenom": "Vorname",
+      "nom": "Nachname",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "envoyer": "Senden",
+      "sending": "Wird gesendet...",
+      "prenomPlaceholder": "Ihr Vorname",
+      "nomPlaceholder": "Ihr Nachname",
+      "emailPlaceholder": "ihre@email.ch",
+      "messagePlaceholder": "Ihre Nachricht..."
+    },
+    "success": {
+      "title": "Nachricht gesendet!",
+      "text": "Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "another": "Eine weitere Nachricht senden"
+    },
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "hours": {
+      "lundiJeudi": "Montag bis Donnerstag",
+      "lundiJeudiH": "7:30-12:00 / 13:30-18:00",
+      "vendredi": "Freitag",
+      "vendrediH": "7:30-12:00 / 13:30-17:00",
+      "weekend": "Samstag und Sonntag",
+      "weekendH": "Geschlossen"
+    }
+  },
+  "cart": {
+    "title": "WARENKORB",
+    "empty": "Ihr Warenkorb ist leer.",
+    "seeWines": "Unsere Weine ansehen",
+    "product": "Produkt",
+    "unitPrice": "Einzelpreis",
+    "quantity": "Menge",
+    "total": "Gesamt",
+    "subtotal": "Zwischensumme",
+    "shipping": "Versand",
+    "totalLabel": "Gesamt",
+    "order": "BESTELLEN",
+    "continueShopping": "Weiter einkaufen",
+    "freeShipping": "KOSTENLOSER VERSAND"
+  },
+  "footer": {
+    "apropos": "Über uns",
+    "conditions": "AGB & Impressum",
+    "mail": "E-Mail",
+    "phone": "Anrufen",
+    "location": "Uns finden",
+    "copyright": "Website erstellt von"
+  },
+  "auth": {
+    "createAccount": "Konto erstellen",
+    "alreadyRegistered": "Bereits registriert?",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "login": "Anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "createBtn": "Mein Konto erstellen"
+  }
+}

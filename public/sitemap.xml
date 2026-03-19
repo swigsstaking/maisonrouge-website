@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Vins -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/vins</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/vins" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/wines" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/weine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/vins" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Vignoble -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/vignoble</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/vignoble" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/vineyard" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/weinberg" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/vignoble" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Oenotourisme -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/oenotourisme</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/oenotourisme" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/wine-tourism" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/weintourismus" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/oenotourisme" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Cuvée des Apprentis -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/cuvee-des-apprentis</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/cuvee-des-apprentis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/apprentice-wines" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/lehrlingsweine" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/cuvee-des-apprentis" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/kontakt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sponsoring -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/sponsoring</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/sponsoring" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/sponsorship" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/sponsoring" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/sponsoring" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Partenaires -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/partenaires</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/partenaires" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/partners" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/partner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/partenaires" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Connexion -->
+  <url>
+    <loc>https://maisonrouge.swigs.online/connexion</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://maisonrouge.swigs.online/connexion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://maisonrouge.swigs.online/en/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://maisonrouge.swigs.online/de/anmelden" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://maisonrouge.swigs.online/connexion" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

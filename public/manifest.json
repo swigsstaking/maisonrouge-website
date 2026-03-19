@@ -1,0 +1,15 @@
+{
+  "name": "Maison Rouge - Vins de caractère",
+  "short_name": "Maison Rouge",
+  "description": "Cave viticole du Valais - Vins de caractère",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBFBFB",
+  "theme_color": "#A22136",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "64x64", "type": "image/x-icon" },
+    { "src": "/logo.jpg", "sizes": "258x190", "type": "image/jpeg" }
+  ],
+  "lang": "fr",
+  "categories": ["food", "shopping"]
+}

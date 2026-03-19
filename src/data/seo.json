@@ -1,0 +1,116 @@
+{
+  "site": {
+    "name": "Maison Rouge",
+    "slug": "maisonrouge",
+    "domain": "maisonrouge.swigs.online",
+    "description": "Des vins de caractère, élaborés par une équipe soudée et motivée répartie dans divers secteurs: vigne, cave, administration et vente.",
+    "logo": "/logo.jpg"
+  },
+  "pages": {
+    "home": {
+      "title": "Maison Rouge | Le vin du tailleur de pierre",
+      "description": "Maison Rouge - Des vins de caractère élaborés dans le Valais. Authenticité des cépages, finesse des crus, hommage au terroir valaisan.",
+      "keywords": ["vin", "valais", "maison rouge", "cave", "vins suisses", "saint-pierre-de-clages", "vin valaisan"],
+      "ogTitle": "Maison Rouge - Le vin du tailleur de pierre",
+      "ogDescription": "Des vins de caractère, élaborés par une équipe soudée et motivée dans le Valais.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online"
+    },
+    "vignoble": {
+      "title": "Vignoble | Maison Rouge",
+      "description": "18 hectares de vignes entre Sierre et Leytron. Découvrez le vignoble Maison Rouge, cultivé en BIO et biodynamie.",
+      "keywords": ["vignoble", "valais", "bio", "biodynamie", "cépages"],
+      "ogTitle": "Le Vignoble Maison Rouge",
+      "ogDescription": "18 hectares de vignes cultivées en BIO entre Sierre et Leytron.",
+      "ogImage": "/banner-small1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/vignoble"
+    },
+    "vins": {
+      "title": "Nos Vins | Maison Rouge",
+      "description": "Découvrez les vins de caractère Maison Rouge : Petite Arvine, Cornalin, Humagne, Pinot Noir et bien d'autres cépages valaisans.",
+      "keywords": ["vins", "petite arvine", "cornalin", "humagne", "pinot noir", "valais"],
+      "ogTitle": "Nos Vins - Maison Rouge",
+      "ogDescription": "Des crus de caractère solides et charpentés qui sauront émerveiller vos papilles.",
+      "ogImage": "/slide2.jpg",
+      "canonical": "https://maisonrouge.swigs.online/vins"
+    },
+    "apprentis": {
+      "title": "Cuvée des Apprentis | Maison Rouge",
+      "description": "Maison Rouge transmet sa passion du vin aux apprentis. Découvrez les cuvées Lo Chaï créées par nos jeunes vignerons.",
+      "keywords": ["apprentis", "lo chaï", "formation", "cuvée"],
+      "ogTitle": "Cuvée des Apprentis - Maison Rouge",
+      "ogDescription": "Des cuvées uniques créées par nos apprentis vignerons.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/cuvee-des-apprentis"
+    },
+    "oenotourisme": {
+      "title": "Oenotourisme | Maison Rouge",
+      "description": "Visites de cave et dégustations à Saint-Pierre-de-Clages. Partagez un moment convivial autour de vins de caractère.",
+      "keywords": ["oenotourisme", "dégustation", "visite cave", "saint-pierre-de-clages"],
+      "ogTitle": "Oenotourisme - Maison Rouge",
+      "ogDescription": "Visites et dégustations sur rendez-vous dans notre cave.",
+      "ogImage": "/batiment.jpg",
+      "canonical": "https://maisonrouge.swigs.online/oenotourisme"
+    },
+    "partenaires": {
+      "title": "Partenaires | Maison Rouge",
+      "description": "Découvrez les partenaires de Maison Rouge : Isovin et Oouliri.",
+      "keywords": ["partenaires", "isovin", "oouliri"],
+      "ogTitle": "Nos Partenaires - Maison Rouge",
+      "ogDescription": "Nos partenaires qui partagent nos valeurs.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/partenaires"
+    },
+    "sponsoring": {
+      "title": "Sponsoring | Maison Rouge",
+      "description": "Maison Rouge soutient la culture, le sport et les loisirs en Valais.",
+      "keywords": ["sponsoring", "sport", "culture", "valais"],
+      "ogTitle": "Sponsoring - Maison Rouge",
+      "ogDescription": "Fiers de soutenir la culture, le sport et les loisirs.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/sponsoring"
+    },
+    "contact": {
+      "title": "Contact | Maison Rouge",
+      "description": "Contactez Maison Rouge à Saint-Pierre-de-Clages. Tél: 027 306 21 81, Email: info@maisonrouge.swigs.online",
+      "keywords": ["contact", "maison rouge", "saint-pierre-de-clages", "téléphone"],
+      "ogTitle": "Nous Contacter - Maison Rouge",
+      "ogDescription": "N'hésitez pas à nous contacter pour toute demande.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/contact"
+    },
+    "conditions": {
+      "title": "Conditions générales | Maison Rouge",
+      "description": "Conditions générales de vente et mentions légales du site Maison Rouge.",
+      "keywords": ["conditions générales", "mentions légales", "CGV", "maison rouge"],
+      "ogTitle": "Conditions générales - Maison Rouge",
+      "ogDescription": "Conditions générales de vente et mentions légales.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/conditions-generales"
+    },
+    "apropos": {
+      "title": "À propos | Maison Rouge",
+      "description": "Découvrez l'histoire de Maison Rouge, cave viticole à Saint-Pierre-de-Clages. Authenticité, finesse, hommage et partage.",
+      "keywords": ["à propos", "maison rouge", "histoire", "équipe", "philosophie", "valais"],
+      "ogTitle": "À propos de Maison Rouge",
+      "ogDescription": "Notre histoire, notre équipe et notre philosophie : authenticité, finesse, hommage et partage.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/a-propos"
+    }
+  },
+  "global": {
+    "siteName": "Maison Rouge",
+    "siteUrl": "https://maisonrouge.swigs.online",
+    "logo": "/logo.jpg",
+    "language": "fr",
+    "social": {
+      "facebook": "https://www.facebook.com/maisonrougevins",
+      "instagram": "https://www.instagram.com/maisonrougevins"
+    },
+    "contact": {
+      "phone": "027 306 21 81",
+      "email": "info@maisonrouge.swigs.online",
+      "address": "Saint-Pierre-de-Clages, Valais, Suisse"
+    }
+  }
+}

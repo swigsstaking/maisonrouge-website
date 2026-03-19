@@ -1,0 +1,486 @@
+[
+  {
+    "name": "Fendant",
+    "slug": "fendant",
+    "category": "Vins Blanc",
+    "price": 17.00,
+    "image": "/wines/fendant.jpg",
+    "description": "Issu du cépage Chasselas, le Fendant fait son apparition en Valais vers 1850. Il devient rapidement le vin blanc le plus répandu dans le canton.",
+    "details": {
+      "cepage": "Chasselas",
+      "robe": "Jaune vert aux reflets brillants",
+      "nez": "Arômes de tilleul, de fleur des champs, de lychees, de miel et une touche minérale",
+      "bouche": "Une attaque fraîche, des notes de noisette et une finale tendre. Vin d'apéritif et de soif.",
+      "alcool": "11.8 % vol.",
+      "temperature": "10-12°C",
+      "conservation": "2 à 3 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Raclette, fondue, charcuterie, crustacés et poissons grillés"
+    }
+  },
+  {
+    "name": "Johannisberg",
+    "slug": "johannisberg",
+    "category": "Vins Blanc",
+    "price": 19.00,
+    "image": "/wines/johannisberg.jpg",
+    "description": "Originaire d'Autriche ou de Transylvanie, le Johannisberg est introduit en Valais au milieu du XIXe siècle.",
+    "details": {
+      "cepage": "Sylvaner",
+      "robe": "Jaune or",
+      "nez": "Arômes d'amandes grillées, de noisettes et de camomille",
+      "bouche": "Vin puissant marqué par une attaque veloutée, finale élégante et suave relevée par une amertume typique.",
+      "alcool": "12,5 % vol.",
+      "temperature": "12-14°C",
+      "conservation": "5 à 20 ans",
+      "elevage": "Traditionnel, sur lies",
+      "appellation": "AOC Valais",
+      "accords": "Asperges, crustacés"
+    }
+  },
+  {
+    "name": "Païen / Heida",
+    "slug": "paien",
+    "category": "Vins Blanc",
+    "price": 16.00,
+    "image": "/wines/paien.jpg",
+    "description": "Le Païen est depuis très longtemps implanté en Valais. Son origine est très difficile à déterminer. Le nom de Heïda signifie « d'une origine très ancienne ».",
+    "details": {
+      "cepage": "Savagnin blanc",
+      "robe": "Jaune or avec de légers reflets verts",
+      "nez": "Agrumes, noisette, amande grillée",
+      "bouche": "Gras, puissant, complexe",
+      "alcool": "13 % vol.",
+      "temperature": "12-14°C",
+      "conservation": "5 à 10 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Fromages, poissons"
+    }
+  },
+  {
+    "name": "Petite Arvine",
+    "slug": "petite-arvine",
+    "category": "Vins Blanc",
+    "price": 26.00,
+    "image": "/wines/petite-arvine.jpg",
+    "description": "« Le roi des vins et le vin des rois » Ce cépage autochtone typiquement valaisan remonte à l'époque romaine.",
+    "details": {
+      "cepage": "Arvine",
+      "robe": "Jaune vert dorée",
+      "nez": "Bouquet complexe avec des notes de fruits de la passion, d'agrumes, d'abricots, d'ananas et de melon",
+      "bouche": "Gras, fruité exotique complexe, dense et vif. Son acidité naturelle et sa note saline finale en font un des plus grands vins blancs du monde.",
+      "alcool": "13,5 % vol.",
+      "temperature": "12-14°C",
+      "conservation": "5 à 15 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Foie gras, poissons nobles, fruits de mer"
+    }
+  },
+  {
+    "name": "Humagne Blanc",
+    "slug": "humagne-blanc",
+    "category": "Vins Blanc",
+    "price": 26.00,
+    "image": "/wines/humagne-blanc.jpg",
+    "description": "L'Humagne blanche est le plus ancien cépage blanc d'origine valaisanne. Cité dans un acte de vente à Sion en 1313 sous le nom d'\"Humagny\".",
+    "details": {
+      "cepage": "Humagne Blanc",
+      "robe": "Jaune or",
+      "nez": "Résine, tilleul, camomille",
+      "bouche": "Charpenté, puissant avec une amertume typique",
+      "alcool": "13 % vol.",
+      "temperature": "12-14°C",
+      "conservation": "5 à 10 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Fromages, charcuterie"
+    }
+  },
+  {
+    "name": "Marsanne",
+    "slug": "marsanne",
+    "category": "Vins Blanc",
+    "price": 26.00,
+    "image": "/wines/marsanne.jpg",
+    "description": "Ce cépage semble avoir été introduit en Valais au milieu du XIXème siècle. Originaire des Côtes du Rhône, la Marsanne trouve en Valais un terroir idéal.",
+    "details": {
+      "cepage": "Marsanne",
+      "robe": "Jaune or",
+      "nez": "Pêches blanches, framboises, vanille",
+      "bouche": "Puissant, somptueux, sculptural, complexe et suave.",
+      "alcool": "13,5 % vol.",
+      "temperature": "14-16°C",
+      "conservation": "10 à 20 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Poissons nobles, volailles"
+    }
+  },
+  {
+    "name": "Sion Doux",
+    "slug": "sion-doux",
+    "category": "Vins Blanc",
+    "price": 29.00,
+    "image": "/wines/sion-doux.jpg",
+    "description": "Vendangé le 18 janvier 2003, raisin complètement botrytisé et caillé. Sa couleur est brun chocolat. Tout simplement un délice.",
+    "details": {
+      "cepage": "Chasselas",
+      "robe": "Or avec des reflets verts",
+      "nez": "Poires, ananas, banane",
+      "bouche": "Attaque charmeuse, onctuosité, très fruité, belle rondeur",
+      "alcool": "12,5 % vol.",
+      "temperature": "8 à 10°C",
+      "conservation": "10+ ans",
+      "elevage": "Spécial",
+      "appellation": "AOC Valais",
+      "accords": "Foie gras, desserts"
+    }
+  },
+  {
+    "name": "Rosé de Syrah",
+    "slug": "rose-syrah",
+    "category": "Vin Rosé",
+    "price": 19.00,
+    "image": "/wines/rose-syrah.jpg",
+    "description": "Un vin d'été parfait pour des journées chaudes.",
+    "details": {
+      "cepage": "Syrah",
+      "robe": "Rosé avec des reflets cuivrés-orangés",
+      "nez": "Fruits rouges, épicé",
+      "bouche": "Souple et épicé avec un côté citronné",
+      "alcool": "12,5 % vol.",
+      "temperature": "10°C",
+      "conservation": "2-5 ans",
+      "elevage": "Cuve en inox",
+      "appellation": "AOC Valais",
+      "accords": "Apéro, grillades, salades"
+    }
+  },
+  {
+    "name": "Gamay",
+    "slug": "gamay",
+    "category": "Vins Rouge",
+    "price": 17.00,
+    "image": "/wines/gamay.jpg",
+    "description": "Très vieux cépage avec des traces au IIIème siècle dans la région de Lyon. En Valais, c'est au milieu du XIXème siècle qu'on en parle.",
+    "details": {
+      "cepage": "Gamay",
+      "robe": "Rubis-violet foncé, profond",
+      "nez": "Cassis, fraise, framboise, banane",
+      "bouche": "Très fruité, fin, léger et agréable",
+      "alcool": "13 % vol.",
+      "temperature": "14-16°C",
+      "conservation": "3 à 5 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Charcuterie, viandes blanches"
+    }
+  },
+  {
+    "name": "Pinot Noir",
+    "slug": "pinot-noir",
+    "category": "Vins Rouge",
+    "price": 18.00,
+    "image": "/wines/pinot-noir.jpg",
+    "description": "Un des cépages les plus fins et les plus parfaits du monde. Il trouve en Valais des terres à sa convenance.",
+    "details": {
+      "cepage": "Pinot Noir",
+      "robe": "Rubis foncé, éclatant",
+      "nez": "Cerise, griotte, framboise, cassis",
+      "bouche": "Très fin, élégant, généreux, délicat et racé",
+      "alcool": "13 % vol.",
+      "temperature": "14-16°C",
+      "conservation": "5 à 10 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Viandes rouges, gibier"
+    }
+  },
+  {
+    "name": "Humagne Rouge",
+    "slug": "humagne-rouge",
+    "category": "Vins Rouge",
+    "price": 16.00,
+    "image": "/wines/humagne-rouge.jpg",
+    "description": "Cépage rustique provenant vraisemblablement de la vallée d'Aoste, il convient bien aux meilleures expositions valaisannes.",
+    "details": {
+      "cepage": "Humagne Rouge",
+      "robe": "Rouge aux reflets noirs",
+      "nez": "Sous-bois, écorces, violettes, baies des bois",
+      "bouche": "Belle charpente, rustique, finissant sur une belle vitalité",
+      "alcool": "12,5 % vol.",
+      "temperature": "16-18°C",
+      "conservation": "5 à 10 ans",
+      "elevage": "Traditionnel",
+      "appellation": "AOC Valais",
+      "accords": "Gibier, fromages"
+    }
+  },
+  {
+    "name": "Syrah",
+    "slug": "syrah",
+    "category": "Vins Rouge",
+    "price": 28.00,
+    "image": "/wines/syrah.jpg",
+    "description": "Introduite en Valais en 1926 par le Dr Henry Wuilloud. Ce plant à maturité tardive doit être réservé aux expositions les plus chaudes.",
+    "details": {
+      "cepage": "Syrah",
+      "robe": "Violet sombre",
+      "nez": "Cuir, poivre, épices, tabac, réglisse",
+      "bouche": "Poivré, épicé, ample, puissant, tannique avec une superbe finale",
+      "alcool": "13 % vol.",
+      "temperature": "16-18°C",
+      "conservation": "5 à 15 ans",
+      "elevage": "Barrique",
+      "appellation": "AOC Valais",
+      "accords": "Viandes rouges, gibier, fromages"
+    }
+  },
+  {
+    "name": "Cornalin",
+    "slug": "cornalin",
+    "category": "Vins Rouge",
+    "price": 32.00,
+    "image": "/wines/cornalin.jpg",
+    "description": "Cépage rouge le plus ancien planté en Valais, autochtone, probablement implanté depuis le XIème siècle. Sa finesse et sa puissance en font un des plus grands vins rouges du monde.",
+    "details": {
+      "cepage": "Cornalin",
+      "robe": "Grenat profond aux reflets noirs",
+      "nez": "Cerise noire et épices",
+      "bouche": "Puissant, généreux, tanins très fins et soyeux, finale équilibrée",
+      "alcool": "13 % vol.",
+      "temperature": "16-18°C",
+      "conservation": "5 à 15 ans",
+      "elevage": "Barrique",
+      "appellation": "AOC Valais",
+      "accords": "Viandes rouges, gibier"
+    }
+  },
+  {
+    "name": "Merlot",
+    "slug": "merlot",
+    "category": "Vins Rouge",
+    "price": 33.00,
+    "image": "/wines/merlot.jpg",
+    "description": "Très répandu en Gironde, c'est le cépage principal de Petrus. En Valais, il trouve un terroir idéal.",
+    "details": {
+      "cepage": "Merlot",
+      "robe": "Violet-noir profond",
+      "nez": "Terreux, café, truffe",
+      "bouche": "Rond, puissant, ample, moelleux, séveux, chaud",
+      "alcool": "13 % vol.",
+      "temperature": "16-18°C",
+      "conservation": "5 à 10 ans",
+      "elevage": "Très long sur-cuvage et élevage en barrique",
+      "appellation": "AOC Valais",
+      "accords": "Viandes rouges, gibier, fromages"
+    }
+  },
+  {
+    "name": "è boè Brut",
+    "slug": "e-boe",
+    "category": "Créations",
+    "price": 44.00,
+    "image": "/wines/e-boe.jpg",
+    "description": "È BOÉ, les bulles en patois, est un vin mousseux brut provenant du vignoble de Conthey, vinifié selon la tradition champenoise. Titre suprême au Grand Prix du Vin Suisse 2018.",
+    "details": {
+      "cepage": "Chardonnay",
+      "robe": "Belle robe jaune pâle avec des reflets verts",
+      "nez": "Fruits exotiques et fleurs",
+      "bouche": "Équilibré avec une fine structure assortie d'une touche briochée",
+      "alcool": "12,6 % vol.",
+      "temperature": "10-12°C",
+      "elevage": "3 ans sur lattes",
+      "appellation": "Mousseux Suisse",
+      "accords": "Apéritif, fruits de mer"
+    }
+  },
+  {
+    "name": "Torpâ",
+    "slug": "torpa",
+    "category": "Créations",
+    "price": 36.00,
+    "image": "/wines/torpa.jpg",
+    "description": "Assemblage blanc sec. Le mariage sublime entre le Païen et la Marsanne font de ce vin blanc un grand vin de garde.",
+    "details": {
+      "cepage": "Savagnin blanc et Marsanne",
+      "robe": "Jaune or",
+      "nez": "Agrumes, amandes grillées, noisette, vanille, fumé",
+      "bouche": "Puissant, riche, gras, vif, complexe",
+      "alcool": "13,5 % vol.",
+      "temperature": "14-16°C",
+      "conservation": "10 à 15 ans",
+      "elevage": "Sur lies en barrique",
+      "appellation": "Vin de Pays Suisse",
+      "accords": "Poissons nobles, volailles"
+    }
+  },
+  {
+    "name": "Lo Grafion",
+    "slug": "lo-grafion",
+    "category": "Créations",
+    "price": 49.00,
+    "image": "/wines/lo-grafion.jpg",
+    "description": "Assemblage rouge. Le sulfureux mariage du Merlot avec le Tempranillo. Médaille d'or au Grand Prix du Vin Suisse 2020 et au Mondial du Merlot 2020.",
+    "details": {
+      "cepage": "Merlot et Tempranillo",
+      "robe": "Violet-noir très profond",
+      "nez": "Café, fumée, terre, sous-bois, cuir, vanille",
+      "bouche": "Puissant, ample, riche, fruité, chaud, tanins puissants",
+      "alcool": "13,5 % vol.",
+      "temperature": "16-18°C",
+      "conservation": "10+ ans",
+      "elevage": "Barrique",
+      "appellation": "Vin de Pays Suisse",
+      "accords": "Viandes rouges, gibier"
+    }
+  },
+  {
+    "name": "Purple Rain - ÉDITION LIMITÉE",
+    "slug": "purple-rain",
+    "category": "Créations",
+    "price": 95.00,
+    "image": "/wines/purple-rain.jpg",
+    "description": "Un vin en édition limitée. Purple pour la couleur violette qui rappelle les grappes de raisin. Rain pour évoquer la pluie suite à la terrible grêle de 2017.",
+    "details": {
+      "cepage": "Assemblage",
+      "alcool": "13 % vol.",
+      "temperature": "16-18°C",
+      "appellation": "Vin de Pays Suisse"
+    }
+  },
+  {
+    "name": "Lo Terôn",
+    "slug": "lo-teron",
+    "category": "Créations",
+    "price": 37.00,
+    "image": "/wines/lo-teron.jpg",
+    "description": "Vin doux issu des cépages Païen et Marsanne. Vendanges complètement botrytisées, ramassées le 18 décembre à 157°Oe.",
+    "details": {
+      "cepage": "Savagnin blanc et Marsanne",
+      "robe": "Jaune orangée",
+      "nez": "Confiture d'abricot, gelée de coing, parfums exotiques, vanille",
+      "bouche": "Attaque soutenue, abricot, gelée de coing, longueur exceptionnelle",
+      "alcool": "14 % vol.",
+      "temperature": "10-14°C",
+      "conservation": "15 à 20 ans",
+      "elevage": "Macération, fermentation en barrique",
+      "appellation": "Vin de Pays Suisse",
+      "accords": "Foie gras, desserts"
+    }
+  },
+  {
+    "name": "Gota",
+    "slug": "gota",
+    "category": "Créations",
+    "price": 95.00,
+    "image": "/wines/gota.jpg",
+    "description": "One of our cellar's flagship products. Very long oak ageing lends all its complexity to this top-quality spirit.",
+    "details": {
+      "cepage": "Merlot et Tempranillo",
+      "robe": "Dark amber",
+      "nez": "Fruity, aromas reminiscent of whisky",
+      "bouche": "Very harmonious, smooth with a fruity, bitter finish",
+      "alcool": "48 % vol.",
+      "temperature": "9-13°C",
+      "elevage": "Approx. 10 years, 9 years in barrels",
+      "accords": "After-dinner drink, coffee, cigar"
+    }
+  },
+  {
+    "name": "Lo Grafion Réserve",
+    "slug": "lo-grafion-reserve",
+    "category": "Créations",
+    "price": 195.00,
+    "image": "/wines/lo-grafion-reserve.jpg",
+    "description": "Grand vin de garde créé uniquement les meilleures années.",
+    "details": {
+      "cepage": "Merlot – Tempranillo",
+      "robe": "Belle robe profonde avec des nuances sombres et violettes",
+      "nez": "Puissant, arômes épicés",
+      "bouche": "Ample et concentrée, vin de haute tenue",
+      "alcool": "13,5 % vol.",
+      "temperature": "16-18°C",
+      "conservation": "10+ ans",
+      "elevage": "3 ans en barrique",
+      "appellation": "Vin de Pays Suisse",
+      "accords": "Viandes rouges, grandes occasions"
+    }
+  },
+  {
+    "name": "Lo Môta",
+    "slug": "lo-mota",
+    "category": "Créations",
+    "price": 35.00,
+    "image": "/wines/lo-mota.jpg",
+    "description": "Vin rouge muté à l'alcool de type Porto, élevé pendant 7 ans en fût de chêne.",
+    "details": {
+      "robe": "Grenat profond aux reflets noirs",
+      "nez": "Cerise noire et épices",
+      "bouche": "Puissant, généreux, tanins très fins",
+      "alcool": "18 % vol.",
+      "temperature": "14-16°C",
+      "elevage": "7 ans en fût de chêne",
+      "accords": "Desserts, fromages bleus"
+    }
+  },
+  {
+    "name": "Valentine",
+    "slug": "valentine",
+    "category": "Vins des Apprentis",
+    "price": 19.00,
+    "image": "/wines/valentine.jpg",
+    "description": "Cuvée des apprentis"
+  },
+  {
+    "name": "Tire-bouchon",
+    "slug": "tire-bouchon",
+    "category": "Produits Dérivés",
+    "price": 195.00,
+    "image": "/wines/tire-bouchon.jpg",
+    "description": "Tire-bouchon Maison Rouge"
+  },
+  {
+    "name": "Huile de pépins de raisin - Lo Grafion",
+    "slug": "huile-lo-grafion",
+    "category": "Produits Dérivés",
+    "price": 55.00,
+    "image": "/wines/huile-lo-grafion.jpg",
+    "description": "Huile de pépins de raisin artisanale"
+  },
+  {
+    "name": "Huile de pépins de raisin - Petite Arvine",
+    "slug": "huile-petite-arvine",
+    "category": "Produits Dérivés",
+    "price": 55.00,
+    "image": "/wines/huile-petite-arvine.jpg",
+    "description": "Huile de pépins de raisin artisanale"
+  },
+  {
+    "name": "Huile de pépins de raisin - Syrah",
+    "slug": "huile-syrah",
+    "category": "Produits Dérivés",
+    "price": 55.00,
+    "image": "/wines/huile-syrah.jpg",
+    "description": "Huile de pépins de raisin artisanale"
+  },
+  {
+    "name": "ISOVIN",
+    "slug": "isovin-product",
+    "category": "Produits Dérivés",
+    "price": 95.00,
+    "image": "/wines/isovin.jpg",
+    "description": "Pot isotherme en bois de hêtre pour bouteilles"
+  },
+  {
+    "name": "è boè Brut et bouchon à bulle",
+    "slug": "e-boe-noel",
+    "category": "Produits Dérivés",
+    "price": 44.00,
+    "image": "/wines/e-boe-noel.jpg",
+    "description": "Coffret è boè Brut avec bouchon à bulle"
+  }
+]
