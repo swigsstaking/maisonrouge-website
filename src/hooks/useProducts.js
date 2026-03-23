@@ -4,7 +4,7 @@ const API_URL = 'https://swigs.online/api';
 const SITE_SLUG = 'maisonrouge';
 
 // Import static products as fallback
-import { products as staticProducts } from '../data/staticProducts';
+import staticProducts from '../data/staticProducts';
 
 export const useProducts = () => {
   const { data: apiProducts } = useQuery({
