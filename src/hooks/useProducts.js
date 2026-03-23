@@ -1,37 +1,36 @@
 import { useQuery } from '@tanstack/react-query';
-
-const API_URL = import.meta.env.VITE_API_URL || 'https://swigs.online/api';
-const SITE_SLUG = 'maisonrouge';
-
-// Import static products as fallback
+import { useAuth } from '../context/AuthContext';
 import staticProducts from '../data/staticProducts';
 
+const API_URL = import.meta.env.VITE_API_URL || 'https://swigs.online/api';
+
 export const useProducts = () => {
+  const { siteId } = useAuth();
+
   const { data: apiProducts } = useQuery({
-    queryKey: ['products', SITE_SLUG],
+    queryKey: ['products', siteId],
     queryFn: async () => {
-      const res = await fetch(`${API_URL}/public/products?siteSlug=${SITE_SLUG}`);
+      const res = await fetch(`${API_URL}/products/public?siteId=${siteId}`);
       if (!res.ok) throw new Error('Failed to fetch products');
       const json = await res.json();
       return json.data;
     },
+    enabled: !!siteId,
     staleTime: 1000 * 60 * 5,
   });
 
-  if (apiProducts) {
-    return apiProducts
-      .filter(p => p.isActive)
-      .map(p => ({
-        _id: p._id,
-        name: p.name,
-        slug: p.slug,
-        category: p.category?.name || p.category?.slug || '',
-        price: p.price?.amount != null ? p.price : { amount: p.price?.amount ?? 0, currency: 'CHF' },
-        image: p.images?.[0] || '',
-        images: p.images || [],
-        description: p.description || '',
-        shortDescription: p.shortDescription || '',
-      }));
+  if (apiProducts && apiProducts.length > 0) {
+    return apiProducts.map(p => ({
+      _id: p._id,
+      name: p.name,
+      slug: p.slug,
+      category: p.category?.name || p.category?.slug || '',
+      price: p.price?.amount != null ? p.price : { amount: p.price?.amount ?? 0, currency: 'CHF' },
+      image: p.images?.[0] || '',
+      images: p.images || [],
+      description: p.description || '',
+      shortDescription: p.shortDescription || '',
+    }));
   }
 
   return staticProducts || [];
