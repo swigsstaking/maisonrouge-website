@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-const API_URL = 'https://swigs.online/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://swigs.online/api';
 const SITE_SLUG = 'maisonrouge';
 
 // Import static products as fallback

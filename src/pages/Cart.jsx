@@ -6,7 +6,7 @@ import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 
-const API_URL = 'https://swigs.online/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://swigs.online/api';
 const SITE_SLUG = 'maisonrouge';
 
 function getPrice(product) {

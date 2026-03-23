@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect, useCallback } from 'rea
 
 const AuthContext = createContext();
 
-const API_URL = 'https://swigs.online/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://swigs.online/api';
 const SITE_SLUG = 'maisonrouge';
 const TOKEN_KEY = 'maisonrouge-customer-token';
 
