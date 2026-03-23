@@ -300,5 +300,20 @@
     "creations": "Créations",
     "vinsApprentis": "Vins des Apprentis",
     "produitsDerives": "Produits Dérivés"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "home": "Accueil",
+    "wines": "Nos vins",
+    "contact": "Contact"
+  },
+  "checkout": {
+    "successTitle": "Commande confirmée !",
+    "successText": "Merci pour votre commande. Vous recevrez un e-mail de confirmation.",
+    "myAccount": "Mon compte",
+    "cancelledTitle": "Commande annulée",
+    "cancelledText": "Votre commande a été annulée. Votre panier est toujours disponible.",
+    "backToCart": "Retour au panier"
   }
 }

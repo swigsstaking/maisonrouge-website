@@ -300,5 +300,20 @@
     "creations": "Creations",
     "vinsApprentis": "Apprentice wines",
     "produitsDerives": "Accessories"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has been moved.",
+    "home": "Home",
+    "wines": "Our wines",
+    "contact": "Contact"
+  },
+  "checkout": {
+    "successTitle": "Order confirmed!",
+    "successText": "Thank you for your order. You will receive a confirmation email.",
+    "myAccount": "My account",
+    "cancelledTitle": "Order cancelled",
+    "cancelledText": "Your order has been cancelled. Your cart is still available.",
+    "backToCart": "Back to cart"
   }
 }

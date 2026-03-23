@@ -17,6 +17,7 @@ import Cart from './pages/Cart';
 import Auth from './pages/Auth';
 import Account from './pages/Account';
 import NotFound from './pages/NotFound';
+import CheckoutRedirect from './pages/CheckoutRedirect';
 import ConditionsGenerales from './pages/ConditionsGenerales';
 import APropos from './pages/APropos';
 
@@ -76,6 +77,12 @@ function App() {
                   <Route path="/de/mein-konto" element={<Account />} />
                   <Route path="/de/agb" element={<ConditionsGenerales />} />
                   <Route path="/de/ueber-uns" element={<APropos />} />
+
+                  {/* Checkout redirect (Stripe success/cancel) */}
+                  <Route path="/checkout" element={<CheckoutRedirect />} />
+                  <Route path="/success" element={<CheckoutRedirect />} />
+                  <Route path="/en/checkout" element={<CheckoutRedirect />} />
+                  <Route path="/de/checkout" element={<CheckoutRedirect />} />
 
                   {/* 404 catch-all */}
                   <Route path="*" element={<NotFound />} />

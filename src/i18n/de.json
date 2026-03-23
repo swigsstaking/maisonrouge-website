@@ -300,5 +300,20 @@
     "creations": "Kreationen",
     "vinsApprentis": "Lehrlingsweine",
     "produitsDerives": "Zubehör"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "home": "Startseite",
+    "wines": "Unsere Weine",
+    "contact": "Kontakt"
+  },
+  "checkout": {
+    "successTitle": "Bestellung bestätigt!",
+    "successText": "Vielen Dank für Ihre Bestellung. Sie erhalten eine Bestätigungs-E-Mail.",
+    "myAccount": "Mein Konto",
+    "cancelledTitle": "Bestellung storniert",
+    "cancelledText": "Ihre Bestellung wurde storniert. Ihr Warenkorb ist weiterhin verfügbar.",
+    "backToCart": "Zurück zum Warenkorb"
   }
 }
