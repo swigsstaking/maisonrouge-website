@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -6,13 +6,15 @@ import GoogleLoginButton from '../components/GoogleLoginButton';
 
 const Auth = () => {
   const navigate = useNavigate();
-  const { login, register, isAuthenticated } = useAuth();
+  const { login, register, isAuthenticated, isLoading } = useAuth();
   const { t, localePath } = useLanguage();
 
   // Redirect if already logged in
-  if (isAuthenticated) {
-    navigate(localePath('mon-compte'), { replace: true });
-  }
+  useEffect(() => {
+    if (isAuthenticated && !isLoading) {
+      navigate(localePath('mon-compte'), { replace: true });
+    }
+  }, [isAuthenticated, isLoading]);
 
   // Register form state
   const [regEmail, setRegEmail] = useState('');

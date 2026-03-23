@@ -36,9 +36,13 @@ export function AuthProvider({ children }) {
       });
   }, []);
 
-  // Fetch profile on init
+  // Fetch profile on init (only if no customer yet)
   useEffect(() => {
     if (!token) {
+      setIsLoading(false);
+      return;
+    }
+    if (customer) {
       setIsLoading(false);
       return;
     }
