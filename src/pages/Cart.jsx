@@ -33,12 +33,25 @@ const Cart = () => {
     setCheckoutLoading(true);
     setCheckoutError('');
     try {
-      const orderItems = items.map(({ product, quantity }) => ({
-        product: product._id || product.slug,
-        name: product.name,
-        quantity,
-        price: getPrice(product),
-      }));
+      // Resolve product IDs: if we only have slugs (from static data), fetch the real _id from API
+      const orderItems = [];
+      for (const { product, quantity } of items) {
+        let productId = product._id;
+        if (!productId) {
+          // Fetch product by slug to get the real MongoDB _id
+          const lookupRes = await fetch(`${API_URL}/products/public/${product.slug}?siteId=${SITE_SLUG}`);
+          if (!lookupRes.ok) throw new Error(`Produit "${product.name}" non trouvé`);
+          const lookupData = await lookupRes.json();
+          productId = lookupData.data?._id;
+          if (!productId) throw new Error(`Produit "${product.name}" non trouvé`);
+        }
+        orderItems.push({
+          product: productId,
+          name: product.name,
+          quantity,
+          price: getPrice(product),
+        });
+      }
       const res = await fetch(`${API_URL}/orders/public`, {
         method: 'POST',
         headers: {
