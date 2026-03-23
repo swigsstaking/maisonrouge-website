@@ -5,14 +5,32 @@ const AuthContext = createContext();
 const API_URL = import.meta.env.VITE_API_URL || 'https://swigs.online/api';
 const SITE_SLUG = 'maisonrouge';
 const TOKEN_KEY = 'maisonrouge-customer-token';
+const CUSTOMER_KEY = 'maisonrouge-customer';
 
 export function AuthProvider({ children }) {
   const [customer, setCustomer] = useState(null);
-  const [token, setToken] = useState(() => localStorage.getItem(TOKEN_KEY));
+  const [token, setToken] = useState(null);
   const [siteId, setSiteId] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   const isAuthenticated = !!customer && !!token;
+
+  // Load customer and token from localStorage on mount (like ADLR)
+  useEffect(() => {
+    const storedToken = localStorage.getItem(TOKEN_KEY);
+    const storedCustomer = localStorage.getItem(CUSTOMER_KEY);
+
+    if (storedToken && storedCustomer) {
+      try {
+        setToken(storedToken);
+        setCustomer(JSON.parse(storedCustomer));
+      } catch {
+        localStorage.removeItem(TOKEN_KEY);
+        localStorage.removeItem(CUSTOMER_KEY);
+      }
+    }
+    setIsLoading(false);
+  }, []);
 
   // Fetch site ID
   useEffect(() => {
@@ -24,34 +42,13 @@ export function AuthProvider({ children }) {
       .catch(() => {});
   }, []);
 
-  // Fetch profile on init
+  // Save to localStorage when customer/token changes
   useEffect(() => {
-    if (!token) {
-      setIsLoading(false);
-      return;
+    if (customer && token) {
+      localStorage.setItem(TOKEN_KEY, token);
+      localStorage.setItem(CUSTOMER_KEY, JSON.stringify(customer));
     }
-    if (customer) {
-      setIsLoading(false);
-      return;
-    }
-
-    fetch(`${API_URL}/customers/me`, {
-      headers: { Authorization: `Bearer ${token}` },
-    })
-      .then((res) => {
-        if (!res.ok) throw new Error('Invalid token');
-        return res.json();
-      })
-      .then((data) => {
-        setCustomer(data.customer || data.data || data);
-      })
-      .catch(() => {
-        localStorage.removeItem(TOKEN_KEY);
-        setToken(null);
-        setCustomer(null);
-      })
-      .finally(() => setIsLoading(false));
-  }, [token]);
+  }, [customer, token]);
 
   const login = useCallback(async (email, password) => {
     if (!siteId) throw new Error('Site non chargé, réessayez');
@@ -64,7 +61,6 @@ export function AuthProvider({ children }) {
     if (!res.ok) throw new Error(data.message || 'Erreur lors de la connexion');
     const t = data.data?.token || data.token;
     const u = data.data || data.customer;
-    localStorage.setItem(TOKEN_KEY, t);
     setToken(t);
     setCustomer(u);
     return data;
@@ -81,7 +77,6 @@ export function AuthProvider({ children }) {
     if (!res.ok) throw new Error(data.message || 'Erreur Google Login');
     const t = data.data?.token || data.token;
     const u = data.data || data.customer;
-    localStorage.setItem(TOKEN_KEY, t);
     setToken(t);
     setCustomer(u);
     return u;
@@ -98,7 +93,6 @@ export function AuthProvider({ children }) {
     if (!res.ok) throw new Error(data.message || "Erreur lors de l'inscription");
     const t = data.data?.token || data.token;
     const u = data.data || data.customer;
-    localStorage.setItem(TOKEN_KEY, t);
     setToken(t);
     setCustomer(u);
     return data;
@@ -106,12 +100,13 @@ export function AuthProvider({ children }) {
 
   const logout = useCallback(() => {
     localStorage.removeItem(TOKEN_KEY);
+    localStorage.removeItem(CUSTOMER_KEY);
     setToken(null);
     setCustomer(null);
   }, []);
 
   const updateProfile = useCallback(async (updates) => {
-    const res = await fetch(`${API_URL}/customers/me`, {
+    const res = await fetch(`${API_URL}/customers/profile`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -121,7 +116,8 @@ export function AuthProvider({ children }) {
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || 'Erreur lors de la mise à jour');
-    setCustomer(data.customer || data);
+    const u = data.data || data.customer || data;
+    setCustomer(u);
     return data;
   }, [token]);
 
