@@ -62,9 +62,11 @@ export function AuthProvider({ children }) {
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || 'Erreur lors de la connexion');
-    localStorage.setItem(TOKEN_KEY, data.token);
-    setToken(data.token);
-    setCustomer(data.customer);
+    const t = data.data?.token || data.token;
+    const u = data.data || data.customer;
+    localStorage.setItem(TOKEN_KEY, t);
+    setToken(t);
+    setCustomer(u);
     return data;
   }, [siteId]);
 
@@ -94,9 +96,11 @@ export function AuthProvider({ children }) {
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || "Erreur lors de l'inscription");
-    localStorage.setItem(TOKEN_KEY, data.token);
-    setToken(data.token);
-    setCustomer(data.customer);
+    const t = data.data?.token || data.token;
+    const u = data.data || data.customer;
+    localStorage.setItem(TOKEN_KEY, t);
+    setToken(t);
+    setCustomer(u);
     return data;
   }, [siteId]);
 

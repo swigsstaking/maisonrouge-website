@@ -20,7 +20,7 @@ function getId(product) {
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice, clearCart } = useCart();
-  const { isAuthenticated, token, siteId } = useAuth();
+  const { isAuthenticated, token, siteId, customer } = useAuth();
   const { t, localePath } = useLanguage();
   const [checkoutLoading, setCheckoutLoading] = useState(false);
   const [checkoutError, setCheckoutError] = useState('');
@@ -46,7 +46,7 @@ const Cart = () => {
           if (!productId) throw new Error(`Produit "${product.name}" non trouvé`);
         }
         orderItems.push({
-          product: productId,
+          productId: productId,
           name: product.name,
           quantity,
           price: getPrice(product),
@@ -61,6 +61,12 @@ const Cart = () => {
         body: JSON.stringify({
           siteId: siteId,
           items: orderItems,
+          customer: {
+            email: customer?.email,
+            firstName: customer?.firstName,
+            lastName: customer?.lastName,
+            phone: customer?.phone || '',
+          },
           paymentMethod: 'stripe',
           successUrl: window.location.origin + localePath('mon-compte'),
           cancelUrl: window.location.origin + localePath('panier'),
