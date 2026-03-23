@@ -308,6 +308,17 @@
     "wines": "Our wines",
     "contact": "Contact"
   },
+  "actualites": {
+    "title": "NEWS",
+    "intro1": "Maison Rouge newsletters",
+    "intro2": "Stay regularly informed about the latest news from the Maison Rouge cellar.",
+    "intro3": "Here we present our different vintages and what happens in the vineyard and cellar throughout the seasons.",
+    "filterAll": "All news",
+    "filterRecettes": "Recipes",
+    "filterEvenements": "Events",
+    "filterVins": "Wines",
+    "readMore": "Read more"
+  },
   "checkout": {
     "successTitle": "Order confirmed!",
     "successText": "Thank you for your order. You will receive a confirmation email.",

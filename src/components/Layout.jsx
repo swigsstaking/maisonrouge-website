@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     { nameKey: 'nav.oenotourisme', routeKey: 'oenotourisme' },
     { nameKey: 'nav.partenaires', routeKey: 'partenaires' },
     { nameKey: 'nav.sponsoring', routeKey: 'sponsoring' },
-    { nameKey: 'nav.actualite', routeKey: null },
+    { nameKey: 'nav.actualite', routeKey: 'actualites' },
     { nameKey: 'nav.contact', routeKey: 'contact' },
   ];
 

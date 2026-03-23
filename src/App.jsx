@@ -20,6 +20,7 @@ import NotFound from './pages/NotFound';
 import CheckoutRedirect from './pages/CheckoutRedirect';
 import ConditionsGenerales from './pages/ConditionsGenerales';
 import APropos from './pages/APropos';
+import Actualites from './pages/Actualites';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
                   <Route path="/mon-compte" element={<Account />} />
                   <Route path="/conditions-generales" element={<ConditionsGenerales />} />
                   <Route path="/a-propos" element={<APropos />} />
+                  <Route path="/actualites" element={<Actualites />} />
 
                   {/* English routes */}
                   <Route path="/en" element={<Home />} />
@@ -61,6 +63,7 @@ function App() {
                   <Route path="/en/my-account" element={<Account />} />
                   <Route path="/en/terms" element={<ConditionsGenerales />} />
                   <Route path="/en/about" element={<APropos />} />
+                  <Route path="/en/news" element={<Actualites />} />
 
                   {/* German routes */}
                   <Route path="/de" element={<Home />} />
@@ -77,6 +80,7 @@ function App() {
                   <Route path="/de/mein-konto" element={<Account />} />
                   <Route path="/de/agb" element={<ConditionsGenerales />} />
                   <Route path="/de/ueber-uns" element={<APropos />} />
+                  <Route path="/de/aktuelles" element={<Actualites />} />
 
                   {/* Checkout redirect (Stripe success/cancel) */}
                   <Route path="/checkout" element={<CheckoutRedirect />} />

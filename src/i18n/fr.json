@@ -308,6 +308,17 @@
     "wines": "Nos vins",
     "contact": "Contact"
   },
+  "actualites": {
+    "title": "ACTUALITÉS",
+    "intro1": "Les bulletins d'information Maison Rouge",
+    "intro2": "Tenez-vous informés régulièrement des actualités de la cave Maison Rouge.",
+    "intro3": "Nous vous présentons ici nos différentes cuvées et ce qu'il se passe à la vigne et à la cave au fil des millésimes.",
+    "filterAll": "Toute l'actualité",
+    "filterRecettes": "Recettes",
+    "filterEvenements": "Événements",
+    "filterVins": "Vins",
+    "readMore": "Lire la suite"
+  },
   "checkout": {
     "successTitle": "Commande confirmée !",
     "successText": "Merci pour votre commande. Vous recevrez un e-mail de confirmation.",

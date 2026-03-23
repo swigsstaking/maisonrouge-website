@@ -308,6 +308,17 @@
     "wines": "Unsere Weine",
     "contact": "Kontakt"
   },
+  "actualites": {
+    "title": "AKTUELLES",
+    "intro1": "Die Informationsbulletins von Maison Rouge",
+    "intro2": "Bleiben Sie regelmässig über die Neuigkeiten des Weinkellers Maison Rouge informiert.",
+    "intro3": "Wir stellen Ihnen hier unsere verschiedenen Cuvées vor und was sich im Weinberg und im Keller im Laufe der Jahrgänge tut.",
+    "filterAll": "Alle Neuigkeiten",
+    "filterRecettes": "Rezepte",
+    "filterEvenements": "Veranstaltungen",
+    "filterVins": "Weine",
+    "readMore": "Weiterlesen"
+  },
   "checkout": {
     "successTitle": "Bestellung bestätigt!",
     "successText": "Vielen Dank für Ihre Bestellung. Sie erhalten eine Bestätigungs-E-Mail.",
