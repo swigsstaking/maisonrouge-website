@@ -74,8 +74,9 @@ const Cart = () => {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || 'Erreur lors de la commande');
-      if (data.checkoutUrl || data.data?.stripeSessionUrl) {
-        window.location.href = data.checkoutUrl || data.data.stripeSessionUrl;
+      const stripeUrl = data.data?.checkoutUrl || data.checkoutUrl || data.data?.stripeSessionUrl;
+      if (stripeUrl) {
+        window.location.href = stripeUrl;
       } else {
         clearCart();
         window.location.href = localePath('mon-compte');
