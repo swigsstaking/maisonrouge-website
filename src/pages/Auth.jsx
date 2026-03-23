@@ -202,7 +202,10 @@ const Auth = () => {
               </button>
             </form>
 
-            <GoogleLoginButton label={t('auth.googleLogin') || 'Continuer avec Google'} />
+            <GoogleLoginButton
+              onSuccess={() => navigate(localePath('mon-compte'))}
+              onError={(msg) => setLoginError(msg)}
+            />
           </div>
         </div>
       </div>
