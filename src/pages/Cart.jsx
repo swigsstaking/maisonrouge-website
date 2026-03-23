@@ -20,7 +20,7 @@ function getId(product) {
 
 const Cart = () => {
   const { items, updateQuantity, removeFromCart, totalPrice, clearCart } = useCart();
-  const { isAuthenticated, token } = useAuth();
+  const { isAuthenticated, token, siteId } = useAuth();
   const { t, localePath } = useLanguage();
   const [checkoutLoading, setCheckoutLoading] = useState(false);
   const [checkoutError, setCheckoutError] = useState('');
@@ -59,7 +59,7 @@ const Cart = () => {
           Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({
-          siteSlug: SITE_SLUG,
+          siteId: siteId,
           items: orderItems,
           paymentMethod: 'stripe',
           successUrl: window.location.origin + localePath('mon-compte'),

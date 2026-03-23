@@ -54,10 +54,11 @@ export function AuthProvider({ children }) {
   }, [token]);
 
   const login = useCallback(async (email, password) => {
+    if (!siteId) throw new Error('Site non chargé, réessayez');
     const res = await fetch(`${API_URL}/customers/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password, siteSlug: SITE_SLUG }),
+      body: JSON.stringify({ email, password, siteId }),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || 'Erreur lors de la connexion');
@@ -65,7 +66,7 @@ export function AuthProvider({ children }) {
     setToken(data.token);
     setCustomer(data.customer);
     return data;
-  }, []);
+  }, [siteId]);
 
   const loginWithGoogle = useCallback(async (credential) => {
     if (!siteId) throw new Error('Site not loaded');
@@ -85,10 +86,11 @@ export function AuthProvider({ children }) {
   }, [siteId]);
 
   const register = useCallback(async (email, password, firstName, lastName) => {
+    if (!siteId) throw new Error('Site non chargé, réessayez');
     const res = await fetch(`${API_URL}/customers/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password, firstName, lastName, siteSlug: SITE_SLUG }),
+      body: JSON.stringify({ email, password, firstName, lastName, siteId }),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || "Erreur lors de l'inscription");
@@ -96,7 +98,7 @@ export function AuthProvider({ children }) {
     setToken(data.token);
     setCustomer(data.customer);
     return data;
-  }, []);
+  }, [siteId]);
 
   const logout = useCallback(() => {
     localStorage.removeItem(TOKEN_KEY);
