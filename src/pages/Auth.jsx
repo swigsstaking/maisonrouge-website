@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+import GoogleLoginButton from '../components/GoogleLoginButton';
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -198,6 +199,8 @@ const Auth = () => {
                 {loginLoading ? t('auth.loggingIn') : t('auth.loginSubmit')}
               </button>
             </form>
+
+            <GoogleLoginButton label={t('auth.googleLogin') || 'Continuer avec Google'} />
           </div>
         </div>
       </div>

@@ -4,8 +4,9 @@ import { useSiteInfo } from '../hooks/useSiteInfo';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useLanguage } from '../context/LanguageContext';
+import { useProducts } from '../hooks/useProducts';
 
-const products = [
+const staticProducts = [
   // Vins Blanc
   { name: 'Fendant', price: '17.00', image: '/wines/fendant.jpg', slug: 'fendant', category: 'Vins Blanc' },
   { name: 'Johannisberg', price: '19.00', image: '/wines/johannisberg.jpg', slug: 'johannisberg', category: 'Vins Blanc' },
@@ -72,6 +73,17 @@ const Vins = () => {
   const { t, localePath } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('all');
   const [addedSlug, setAddedSlug] = useState(null);
+  const apiProducts = useProducts();
+
+  // Use API products if available, fallback to static
+  const products = apiProducts.length > 0 ? apiProducts.map(p => ({
+    name: p.name,
+    price: typeof p.price === 'object' ? p.price.amount?.toFixed(2) : p.price,
+    image: p.images?.[0] || p.image,
+    slug: p.slug,
+    category: p.category,
+    _id: p._id,
+  })) : staticProducts;
 
   const filteredProducts =
     activeCategory === 'all'

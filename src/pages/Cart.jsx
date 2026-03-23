@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Minus, Plus, X } from 'lucide-react';
+import { Minus, Plus, X, AlertCircle } from 'lucide-react';
 import SEOHead from '../components/SEOHead';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
+
+const API_URL = 'https://swigs.online/api';
+const SITE_SLUG = 'maisonrouge';
 
 function getPrice(product) {
   const amount = product.price?.amount;
@@ -14,8 +19,54 @@ function getId(product) {
 }
 
 const Cart = () => {
-  const { items, updateQuantity, removeFromCart, totalPrice } = useCart();
+  const { items, updateQuantity, removeFromCart, totalPrice, clearCart } = useCart();
+  const { isAuthenticated, token } = useAuth();
   const { t, localePath } = useLanguage();
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  const [checkoutError, setCheckoutError] = useState('');
+
+  const handleCheckout = async () => {
+    if (!isAuthenticated) {
+      window.location.href = localePath('connexion');
+      return;
+    }
+    setCheckoutLoading(true);
+    setCheckoutError('');
+    try {
+      const orderItems = items.map(({ product, quantity }) => ({
+        product: product._id || product.slug,
+        name: product.name,
+        quantity,
+        price: getPrice(product),
+      }));
+      const res = await fetch(`${API_URL}/orders/public`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          siteSlug: SITE_SLUG,
+          items: orderItems,
+          paymentMethod: 'stripe',
+          successUrl: window.location.origin + localePath('mon-compte'),
+          cancelUrl: window.location.origin + localePath('panier'),
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Erreur lors de la commande');
+      if (data.checkoutUrl || data.data?.stripeSessionUrl) {
+        window.location.href = data.checkoutUrl || data.data.stripeSessionUrl;
+      } else {
+        clearCart();
+        window.location.href = localePath('mon-compte');
+      }
+    } catch (err) {
+      setCheckoutError(err.message);
+    } finally {
+      setCheckoutLoading(false);
+    }
+  };
 
   return (
     <>
@@ -239,8 +290,19 @@ const Cart = () => {
                   </span>
                 </div>
 
-                <button className="w-full bg-primary-600 text-white uppercase text-sm font-bold tracking-wider py-4 hover:bg-primary-700 transition-colors duration-200 font-['Raleway']">
-                  {t('cart.order')}
+                {checkoutError && (
+                  <div className="flex items-center gap-2 text-red-600 text-sm mb-4 bg-red-50 p-3 rounded">
+                    <AlertCircle size={16} />
+                    <span>{checkoutError}</span>
+                  </div>
+                )}
+
+                <button
+                  onClick={handleCheckout}
+                  disabled={checkoutLoading}
+                  className="w-full bg-primary-600 text-white uppercase text-sm font-bold tracking-wider py-4 hover:bg-primary-700 transition-colors duration-200 font-['Raleway'] disabled:opacity-50"
+                >
+                  {checkoutLoading ? '...' : t('cart.order')}
                 </button>
 
                 <div className="text-center mt-4">
