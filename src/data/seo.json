@@ -96,6 +96,15 @@
       "ogDescription": "Notre histoire, notre équipe et notre philosophie : authenticité, finesse, hommage et partage.",
       "ogImage": "/slide1.jpg",
       "canonical": "https://maisonrouge.swigs.online/a-propos"
+    },
+    "actualites": {
+      "title": "Actualités | Maison Rouge",
+      "description": "Découvrez les dernières actualités de Maison Rouge : recettes, événements et nouveautés autour de nos vins valaisans.",
+      "keywords": ["actualités", "maison rouge", "recettes", "événements", "vins", "valais"],
+      "ogTitle": "Actualités - Maison Rouge",
+      "ogDescription": "Les dernières nouvelles et événements de la cave Maison Rouge.",
+      "ogImage": "/slide1.jpg",
+      "canonical": "https://maisonrouge.swigs.online/actualites"
     }
   },
   "global": {

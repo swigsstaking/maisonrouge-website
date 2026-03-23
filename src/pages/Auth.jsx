@@ -144,7 +144,7 @@ const Auth = () => {
               <button
                 type="submit"
                 disabled={regLoading}
-                className="w-full bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase py-3 rounded transition-colors disabled:opacity-50"
+                className="w-full bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase py-3.5 rounded transition-colors disabled:opacity-50"
               >
                 {regLoading ? t('auth.creating') : t('auth.createSubmit')}
               </button>
@@ -189,14 +189,14 @@ const Auth = () => {
                 />
               </div>
               <div className="text-right">
-                <a href="#" className="text-sm text-primary-600 hover:text-primary-700 underline">
+                <a href="#" className="text-sm text-primary-600 hover:text-primary-700 underline py-2 inline-block">
                   {t('auth.forgotPassword')}
                 </a>
               </div>
               <button
                 type="submit"
                 disabled={loginLoading}
-                className="w-full bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase py-3 rounded transition-colors disabled:opacity-50"
+                className="w-full bg-primary-600 hover:bg-primary-700 text-white text-xs font-bold tracking-extra-wide uppercase py-3.5 rounded transition-colors disabled:opacity-50"
               >
                 {loginLoading ? t('auth.loggingIn') : t('auth.loginSubmit')}
               </button>

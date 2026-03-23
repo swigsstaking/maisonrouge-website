@@ -115,6 +115,7 @@ const Vins = () => {
           <select
             value={activeCategory}
             onChange={(e) => setActiveCategory(e.target.value)}
+            aria-label="Filtrer par catégorie"
             className="w-full md:w-auto border border-gray-300 rounded px-4 py-2 text-sm font-['Raleway'] text-secondary-800 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600"
           >
             <option value="all">{t('vins.filter.all')}</option>
@@ -149,9 +150,9 @@ const Vins = () => {
 
                 {/* Product Info */}
                 <div className="w-3/5 pl-4 flex flex-col justify-center">
-                  <h3 className="text-sm font-bold uppercase tracking-wide text-secondary-800 font-['Raleway'] mb-2">
+                  <h2 className="text-sm font-bold uppercase tracking-wide text-secondary-800 font-['Raleway'] mb-2">
                     {product.name}
-                  </h3>
+                  </h2>
                   <p className="text-primary-600 font-bold font-['Raleway'] mb-3">
                     CHF {product.price}
                   </p>
@@ -162,7 +163,7 @@ const Vins = () => {
                       setAddedSlug(product.slug);
                       setTimeout(() => setAddedSlug(null), 2000);
                     }}
-                    className={`text-xs uppercase font-bold py-1 px-3 transition-colors duration-200 font-['Raleway'] self-start ${
+                    className={`text-sm uppercase font-bold py-2.5 px-4 transition-colors duration-200 font-['Raleway'] self-start ${
                       addedSlug === product.slug
                         ? 'bg-green-600 text-white'
                         : 'bg-primary-600 text-white hover:bg-primary-700'

@@ -201,10 +201,10 @@ const Layout = ({ children }) => {
                     href={siteInfo.social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-white/70 transition-colors"
+                    className="text-white hover:text-white/70 transition-colors p-2"
                     aria-label="Facebook"
                   >
-                    <Facebook size={30} />
+                    <Facebook size={24} />
                   </a>
                 )}
                 {siteInfo.social?.instagram && (
@@ -212,18 +212,18 @@ const Layout = ({ children }) => {
                     href={siteInfo.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-white/70 transition-colors"
+                    className="text-white hover:text-white/70 transition-colors p-2"
                     aria-label="Instagram"
                   >
-                    <Instagram size={30} />
+                    <Instagram size={24} />
                   </a>
                 )}
               </div>
               <div className="flex flex-col gap-3">
-                <Link to={localePath('a-propos')} className="text-white font-semibold underline hover:text-white/70 transition-colors">
+                <Link to={localePath('a-propos')} className="text-white font-semibold underline hover:text-white/70 transition-colors py-1 inline-block">
                   {t('footer.apropos')}
                 </Link>
-                <Link to={localePath('conditions-generales')} className="text-white font-semibold underline hover:text-white/70 transition-colors">
+                <Link to={localePath('conditions-generales')} className="text-white font-semibold underline hover:text-white/70 transition-colors py-1 inline-block">
                   {t('footer.conditions')}
                 </Link>
               </div>
@@ -239,7 +239,7 @@ const Layout = ({ children }) => {
                 </span>
                 <a
                   href="mailto:info@maisonrouge.swigs.online"
-                  className="text-sm text-white/80 hover:text-white transition-colors"
+                  className="text-sm text-white/80 hover:text-white transition-colors py-1 inline-block"
                 >
                   info@maisonrouge.swigs.online
                 </a>
@@ -253,7 +253,7 @@ const Layout = ({ children }) => {
                 </span>
                 <a
                   href="tel:+41273062181"
-                  className="text-sm text-white/80 hover:text-white transition-colors"
+                  className="text-sm text-white/80 hover:text-white transition-colors py-1 inline-block"
                 >
                   027 306 21 81
                 </a>

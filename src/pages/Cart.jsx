@@ -172,19 +172,19 @@ const Cart = () => {
                                   onClick={() =>
                                     updateQuantity(id, quantity - 1)
                                   }
-                                  className="w-8 h-8 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
+                                  className="w-10 h-10 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
                                   aria-label="Diminuer"
                                 >
                                   <Minus size={14} />
                                 </button>
-                                <span className="w-10 h-8 flex items-center justify-center text-sm font-['Raleway'] text-secondary-800 border-x border-gray-300">
+                                <span className="w-10 h-10 flex items-center justify-center text-sm font-['Raleway'] text-secondary-800 border-x border-gray-300">
                                   {quantity}
                                 </span>
                                 <button
                                   onClick={() =>
                                     updateQuantity(id, quantity + 1)
                                   }
-                                  className="w-8 h-8 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
+                                  className="w-10 h-10 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
                                   aria-label="Augmenter"
                                 >
                                   <Plus size={14} />
@@ -198,7 +198,7 @@ const Cart = () => {
                           <td className="py-4 px-2">
                             <button
                               onClick={() => removeFromCart(id)}
-                              className="text-secondary-400 hover:text-primary-600 transition-colors"
+                              className="p-2 text-secondary-400 hover:text-primary-600 transition-colors"
                               aria-label="Supprimer"
                             >
                               <X size={18} />
@@ -239,7 +239,7 @@ const Cart = () => {
                           </Link>
                           <button
                             onClick={() => removeFromCart(id)}
-                            className="text-secondary-400 hover:text-primary-600 transition-colors ml-2 flex-shrink-0"
+                            className="p-2 text-secondary-400 hover:text-primary-600 transition-colors ml-2 flex-shrink-0"
                             aria-label="Supprimer"
                           >
                             <X size={18} />
@@ -254,19 +254,19 @@ const Cart = () => {
                               onClick={() =>
                                 updateQuantity(id, quantity - 1)
                               }
-                              className="w-8 h-8 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
+                              className="w-10 h-10 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
                               aria-label="Diminuer"
                             >
                               <Minus size={14} />
                             </button>
-                            <span className="w-10 h-8 flex items-center justify-center text-sm font-['Raleway'] text-secondary-800 border-x border-gray-300">
+                            <span className="w-10 h-10 flex items-center justify-center text-sm font-['Raleway'] text-secondary-800 border-x border-gray-300">
                               {quantity}
                             </span>
                             <button
                               onClick={() =>
                                 updateQuantity(id, quantity + 1)
                               }
-                              className="w-8 h-8 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
+                              className="w-10 h-10 flex items-center justify-center text-secondary-700 hover:bg-gray-100 transition-colors"
                               aria-label="Augmenter"
                             >
                               <Plus size={14} />
@@ -328,7 +328,7 @@ const Cart = () => {
                 <div className="text-center mt-4">
                   <Link
                     to={localePath('vins')}
-                    className="text-sm text-secondary-600 hover:text-primary-600 transition-colors font-['Raleway'] underline"
+                    className="text-sm text-secondary-600 hover:text-primary-600 transition-colors font-['Raleway'] underline py-2 inline-block"
                   >
                     {t('cart.continueShopping')}
                   </Link>

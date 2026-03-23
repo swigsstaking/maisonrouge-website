@@ -73,13 +73,17 @@ const Home = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? 'bg-white scale-110'
-                  : 'bg-white/50 hover:bg-white/75'
-              }`}
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label={`Slide ${index + 1}`}
-            />
+            >
+              <span
+                className={`block w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide
+                    ? 'bg-white scale-110'
+                    : 'bg-white/50 hover:bg-white/75'
+                }`}
+              />
+            </button>
           ))}
         </div>
       </section>

@@ -16,6 +16,7 @@ const pagePathMap = {
   contact:      { fr: '/contact',             en: '/en/contact',         de: '/de/kontakt' },
   conditions:   { fr: '/conditions-generales', en: '/en/terms',          de: '/de/agb' },
   apropos:      { fr: '/a-propos',            en: '/en/about',           de: '/de/ueber-uns' },
+  actualites:   { fr: '/actualites',          en: '/en/news',            de: '/de/aktuelles' },
 };
 
 const DOMAIN = 'https://maisonrouge.swigs.online';

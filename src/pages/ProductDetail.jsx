@@ -131,7 +131,7 @@ const ProductDetail = () => {
 
       {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <nav className="flex items-center gap-2 text-sm text-secondary-500 font-['Raleway']">
+        <nav className="flex items-center gap-2 text-sm text-secondary-600 font-['Raleway']">
           <Link to={localePath('vins')} className="hover:text-primary-600 transition-colors">
             {t('product.backToWines')}
           </Link>
@@ -173,7 +173,7 @@ const ProductDetail = () => {
 
               {/* Structured Details */}
               {details.length > 0 && (
-                <div className="space-y-3 mb-8">
+                <dl className="space-y-3 mb-8">
                   {details.map((detail, index) => (
                     <div key={index}>
                       <dt className="text-xs font-bold uppercase tracking-wider text-primary-600 font-['Raleway']">
@@ -184,7 +184,7 @@ const ProductDetail = () => {
                       </dd>
                     </div>
                   ))}
-                </div>
+                </dl>
               )}
 
               {/* Divider */}
@@ -215,6 +215,7 @@ const ProductDetail = () => {
                     type="number"
                     min="1"
                     value={quantity}
+                    aria-label="Quantité"
                     onChange={(e) => {
                       const val = parseInt(e.target.value, 10);
                       if (!isNaN(val) && val >= 1) setQuantity(val);

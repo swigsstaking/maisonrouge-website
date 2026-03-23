@@ -59,6 +59,7 @@ const Actualites = () => {
           <select
             value={activeCategory}
             onChange={(e) => setActiveCategory(e.target.value)}
+            aria-label="Filtrer par catégorie"
             className="border border-secondary-300 rounded px-4 py-2 text-secondary-700 focus:outline-none focus:ring-2 focus:ring-primary-600 focus:border-primary-600"
           >
             {CATEGORIES.map((cat) => (
