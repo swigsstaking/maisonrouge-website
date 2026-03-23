@@ -21,6 +21,7 @@ import CheckoutRedirect from './pages/CheckoutRedirect';
 import ConditionsGenerales from './pages/ConditionsGenerales';
 import APropos from './pages/APropos';
 import Actualites from './pages/Actualites';
+import ArticleDetail from './pages/ArticleDetail';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
                   <Route path="/conditions-generales" element={<ConditionsGenerales />} />
                   <Route path="/a-propos" element={<APropos />} />
                   <Route path="/actualites" element={<Actualites />} />
+                  <Route path="/actualites/:slug" element={<ArticleDetail />} />
 
                   {/* English routes */}
                   <Route path="/en" element={<Home />} />
@@ -64,6 +66,7 @@ function App() {
                   <Route path="/en/terms" element={<ConditionsGenerales />} />
                   <Route path="/en/about" element={<APropos />} />
                   <Route path="/en/news" element={<Actualites />} />
+                  <Route path="/en/news/:slug" element={<ArticleDetail />} />
 
                   {/* German routes */}
                   <Route path="/de" element={<Home />} />
@@ -81,6 +84,7 @@ function App() {
                   <Route path="/de/agb" element={<ConditionsGenerales />} />
                   <Route path="/de/ueber-uns" element={<APropos />} />
                   <Route path="/de/aktuelles" element={<Actualites />} />
+                  <Route path="/de/aktuelles/:slug" element={<ArticleDetail />} />
 
                   {/* Checkout redirect (Stripe success/cancel) */}
                   <Route path="/checkout" element={<CheckoutRedirect />} />

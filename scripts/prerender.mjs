@@ -35,7 +35,23 @@ const productRoutes = productSlugs.flatMap(slug => [
   `/de/weine/${slug}`,
 ]);
 
-const allRoutes = [...staticRoutes, ...productRoutes];
+const blogSlugs = [
+  'filet-mignon', 'poisson-creme', 'roti-cerf', 'magret-figues',
+  'veloute-chataigne', 'magret-cornalin', 'feuillete-volaille', 'truffes-choco',
+  'panna-cotta', 'risotto-paien', 'vin-chaud', 'dinde-pinot',
+  'oenotourisme-blog', 'millesime-2004', 'millesime-2005', 'millesime-2006',
+  'millesime-2007', 'millesime-2008', 'millesime-2009', 'millesime-2010',
+  'millesime-2011', 'millesime-2012', 'millesime-2013', 'millesime-2014',
+  'millesime-2015', 'millesime-2016',
+];
+
+const blogRoutes = blogSlugs.flatMap(slug => [
+  `/actualites/${slug}`,
+  `/en/news/${slug}`,
+  `/de/aktuelles/${slug}`,
+]);
+
+const allRoutes = [...staticRoutes, ...productRoutes, ...blogRoutes];
 
 async function prerender() {
   console.log(`\n🚀 Prerendering ${allRoutes.length} routes...\n`);

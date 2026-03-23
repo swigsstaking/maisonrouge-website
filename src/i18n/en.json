@@ -317,7 +317,9 @@
     "filterRecettes": "Recipes",
     "filterEvenements": "Events",
     "filterVins": "Wines",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "backToList": "Back to news",
+    "notFound": "Article not found"
   },
   "checkout": {
     "successTitle": "Order confirmed!",
