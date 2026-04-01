@@ -41,6 +41,8 @@ const Layout = ({ children }) => {
               src="/logo.jpg"
               alt="Maison Rouge"
               className="h-16 md:h-24 w-auto"
+              width={192}
+              height={96}
             />
           </Link>
 

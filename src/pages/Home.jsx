@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const slides = [
-  '/slide1.jpg',
-  '/slide2.jpg',
-  '/slide3.jpg',
+  { webp: '/slide1.webp', jpg: '/slide1.jpg' },
+  { webp: '/slide2.webp', jpg: '/slide2.jpg' },
+  { webp: '/slide3.webp', jpg: '/slide3.jpg' },
 ];
 
 const sponsorKeys = [
@@ -51,17 +51,24 @@ const Home = () => {
       {/* ===== HERO SLIDER SECTION ===== */}
       <section className="relative h-[70vh] overflow-hidden">
         {slides.map((slide, index) => (
-          <div
+          <picture
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{
-              backgroundImage: `url(${slide})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          />
+          >
+            <source srcSet={slide.webp} type="image/webp" />
+            <img
+              src={slide.jpg}
+              alt={`Maison Rouge - Slide ${index + 1}`}
+              className="w-full h-full object-cover"
+              loading={index === 0 ? 'eager' : 'lazy'}
+              fetchPriority={index === 0 ? 'high' : 'auto'}
+              decoding={index === 0 ? 'sync' : 'async'}
+              width={1920}
+              height={1080}
+            />
+          </picture>
         ))}
 
         {/* Dark overlay */}
