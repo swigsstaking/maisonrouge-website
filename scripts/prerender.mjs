@@ -12,12 +12,15 @@ const staticRoutes = [
   '/vignoble', '/vins', '/cuvee-des-apprentis', '/oenotourisme',
   '/partenaires', '/sponsoring', '/contact', '/connexion',
   '/a-propos', '/conditions-generales', '/actualites', '/checkout',
+  '/millesimes-anciens',
   '/en', '/en/vineyard', '/en/wines', '/en/apprentice-wines',
   '/en/wine-tourism', '/en/partners', '/en/sponsorship', '/en/contact',
   '/en/login', '/en/about', '/en/terms', '/en/news', '/en/checkout',
+  '/en/birth-year-wines',
   '/de', '/de/weinberg', '/de/weine', '/de/lehrlingsweine',
   '/de/weintourismus', '/de/partner', '/de/sponsoring', '/de/kontakt',
   '/de/anmelden', '/de/ueber-uns', '/de/agb', '/de/aktuelles', '/de/checkout',
+  '/de/geburtsjahrgang-weine',
 ];
 
 const productSlugs = [

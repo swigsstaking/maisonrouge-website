@@ -22,6 +22,7 @@ import ConditionsGenerales from './pages/ConditionsGenerales';
 import APropos from './pages/APropos';
 import Actualites from './pages/Actualites';
 import ArticleDetail from './pages/ArticleDetail';
+import MillesimesAnciens from './pages/MillesimesAnciens';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
                   <Route path="/a-propos" element={<APropos />} />
                   <Route path="/actualites" element={<Actualites />} />
                   <Route path="/actualites/:slug" element={<ArticleDetail />} />
+                  <Route path="/millesimes-anciens" element={<MillesimesAnciens />} />
 
                   {/* English routes */}
                   <Route path="/en" element={<Home />} />
@@ -67,6 +69,7 @@ function App() {
                   <Route path="/en/about" element={<APropos />} />
                   <Route path="/en/news" element={<Actualites />} />
                   <Route path="/en/news/:slug" element={<ArticleDetail />} />
+                  <Route path="/en/birth-year-wines" element={<MillesimesAnciens />} />
 
                   {/* German routes */}
                   <Route path="/de" element={<Home />} />
@@ -85,6 +88,7 @@ function App() {
                   <Route path="/de/ueber-uns" element={<APropos />} />
                   <Route path="/de/aktuelles" element={<Actualites />} />
                   <Route path="/de/aktuelles/:slug" element={<ArticleDetail />} />
+                  <Route path="/de/geburtsjahrgang-weine" element={<MillesimesAnciens />} />
 
                   {/* Checkout redirect (Stripe success/cancel) */}
                   <Route path="/checkout" element={<CheckoutRedirect />} />

@@ -15,6 +15,7 @@ function getPrice(product) {
 }
 
 function getId(product) {
+  if (product.variantId) return `${product._id}_${product.variantId}`;
   return product._id || product.slug;
 }
 
@@ -45,12 +46,16 @@ const Cart = () => {
           productId = lookupData.data?._id;
           if (!productId) throw new Error(`Produit "${product.name}" non trouvé`);
         }
-        orderItems.push({
+        const item = {
           productId: productId,
           name: product.name,
           quantity,
           price: getPrice(product),
-        });
+        };
+        if (product.variantId) {
+          item.variantId = product.variantId;
+        }
+        orderItems.push(item);
       }
       const res = await fetch(`${API_URL}/orders/public`, {
         method: 'POST',

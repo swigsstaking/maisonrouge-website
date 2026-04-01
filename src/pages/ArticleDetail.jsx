@@ -89,10 +89,16 @@ const ArticleDetail = () => {
           />
         </div>
 
-        <div className="text-secondary-700 leading-relaxed space-y-4">
-          <p>{article.excerpt}</p>
-          <p className="italic text-secondary-500">Contenu complet à venir.</p>
-        </div>
+        {article.content ? (
+          <div
+            className="text-secondary-700 leading-relaxed prose prose-headings:text-primary-600 prose-headings:uppercase prose-headings:tracking-wider prose-headings:text-base prose-headings:font-bold prose-h3:mt-8 prose-h3:mb-3 prose-ul:my-3 prose-li:my-0.5 prose-p:my-3 prose-a:text-primary-600 max-w-none"
+            dangerouslySetInnerHTML={{ __html: article.content }}
+          />
+        ) : (
+          <div className="text-secondary-700 leading-relaxed space-y-4">
+            <p>{article.excerpt}</p>
+          </div>
+        )}
 
         <div className="mt-12">
           <Link

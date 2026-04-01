@@ -9,9 +9,9 @@ const translations = { fr, en, de };
 const LanguageContext = createContext(null);
 
 const routeMap = {
-  fr: { vignoble: 'vignoble', vins: 'vins', 'cuvee-des-apprentis': 'cuvee-des-apprentis', oenotourisme: 'oenotourisme', partenaires: 'partenaires', sponsoring: 'sponsoring', contact: 'contact', panier: 'panier', connexion: 'connexion', 'mon-compte': 'mon-compte', 'conditions-generales': 'conditions-generales', 'a-propos': 'a-propos', actualites: 'actualites' },
-  en: { vignoble: 'vineyard', vins: 'wines', 'cuvee-des-apprentis': 'apprentice-wines', oenotourisme: 'wine-tourism', partenaires: 'partners', sponsoring: 'sponsorship', contact: 'contact', panier: 'cart', connexion: 'login', 'mon-compte': 'my-account', 'conditions-generales': 'terms', 'a-propos': 'about', actualites: 'news' },
-  de: { vignoble: 'weinberg', vins: 'weine', 'cuvee-des-apprentis': 'lehrlingsweine', oenotourisme: 'weintourismus', partenaires: 'partner', sponsoring: 'sponsoring', contact: 'kontakt', panier: 'warenkorb', connexion: 'anmelden', 'mon-compte': 'mein-konto', 'conditions-generales': 'agb', 'a-propos': 'ueber-uns', actualites: 'aktuelles' },
+  fr: { vignoble: 'vignoble', vins: 'vins', 'cuvee-des-apprentis': 'cuvee-des-apprentis', oenotourisme: 'oenotourisme', partenaires: 'partenaires', sponsoring: 'sponsoring', contact: 'contact', panier: 'panier', connexion: 'connexion', 'mon-compte': 'mon-compte', 'conditions-generales': 'conditions-generales', 'a-propos': 'a-propos', actualites: 'actualites', 'millesimes-anciens': 'millesimes-anciens' },
+  en: { vignoble: 'vineyard', vins: 'wines', 'cuvee-des-apprentis': 'apprentice-wines', oenotourisme: 'wine-tourism', partenaires: 'partners', sponsoring: 'sponsorship', contact: 'contact', panier: 'cart', connexion: 'login', 'mon-compte': 'my-account', 'conditions-generales': 'terms', 'a-propos': 'about', actualites: 'news', 'millesimes-anciens': 'birth-year-wines' },
+  de: { vignoble: 'weinberg', vins: 'weine', 'cuvee-des-apprentis': 'lehrlingsweine', oenotourisme: 'weintourismus', partenaires: 'partner', sponsoring: 'sponsoring', contact: 'kontakt', panier: 'warenkorb', connexion: 'anmelden', 'mon-compte': 'mein-konto', 'conditions-generales': 'agb', 'a-propos': 'ueber-uns', actualites: 'aktuelles', 'millesimes-anciens': 'geburtsjahrgang-weine' },
 };
 
 // Build reverse maps: for each language, map translated slug -> FR key

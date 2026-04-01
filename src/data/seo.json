@@ -105,6 +105,15 @@
       "ogDescription": "Les dernières nouvelles et événements de la cave Maison Rouge.",
       "ogImage": "/slide1.jpg",
       "canonical": "https://maisonrouge.swigs.online/actualites"
+    },
+    "millesimes": {
+      "title": "Vieux Millésimes - Vins de Garde du Valais | Maison Rouge",
+      "description": "Découvrez nos vieux millésimes 2004-2016, vins de garde du Valais élevés en barrique. Vin de naissance, cadeau 18 ans, millésimes d'exception.",
+      "keywords": ["vin de naissance suisse", "cadeau vin millésime naissance", "vin de garde valais", "vieux millésimes vin suisse", "acheter vin année de naissance", "cadeau 18 ans vin", "vin millésimé cadeau", "birth year wine switzerland", "Geburtsjahr Wein Schweiz", "cave maison rouge"],
+      "ogTitle": "Vins de Naissance - Millésimes Anciens | Maison Rouge",
+      "ogDescription": "Offrez un vin de l'année de naissance de votre enfant. Millésimes 2004 à 2016, élevés en barrique dans nos caves du Valais.",
+      "ogImage": "/blog/millesime-2005.jpg",
+      "canonical": "https://maisonrouge.swigs.online/millesimes-anciens"
     }
   },
   "global": {

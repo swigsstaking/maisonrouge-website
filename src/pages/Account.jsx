@@ -47,7 +47,7 @@ const Account = () => {
         return res.json();
       })
       .then((data) => {
-        setOrders(Array.isArray(data) ? data : data.orders || []);
+        setOrders(Array.isArray(data) ? data : data.data || data.orders || []);
       })
       .catch(() => {
         setOrders([]);

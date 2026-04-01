@@ -17,6 +17,7 @@ const pagePathMap = {
   conditions:   { fr: '/conditions-generales', en: '/en/terms',          de: '/de/agb' },
   apropos:      { fr: '/a-propos',            en: '/en/about',           de: '/de/ueber-uns' },
   actualites:   { fr: '/actualites',          en: '/en/news',            de: '/de/aktuelles' },
+  millesimes:   { fr: '/millesimes-anciens',  en: '/en/birth-year-wines', de: '/de/geburtsjahrgang-weine' },
 };
 
 const DOMAIN = 'https://maisonrouge.swigs.online';

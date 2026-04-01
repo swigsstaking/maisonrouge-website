@@ -85,10 +85,12 @@ const Vins = () => {
     _id: p._id,
   })) : staticProducts;
 
+  const shopProducts = products.filter((p) => p.category !== 'Vieux Millésimes');
+
   const filteredProducts =
     activeCategory === 'all'
-      ? products
-      : products.filter((p) => p.category === activeCategory);
+      ? shopProducts
+      : shopProducts.filter((p) => p.category === activeCategory);
 
   return (
     <>
